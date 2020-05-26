@@ -1,0 +1,11 @@
+org.recast4j.detour.tilecache.TileCacheTest.testPerformance,pass,2000,2000,0,0
+org.recast4j.detour.tilecache.io.TileCacheReaderWriterTest.testLZ4,pass,2000,2000,0,0
+org.recast4j.detour.tilecache.io.TileCacheReaderWriterTest.testFastLz,pass,2000,2000,0,0
+org.recast4j.detour.tilecache.io.TileCacheReaderTest.testNavmesh,pass,2000,2000,0,0
+org.recast4j.detour.tilecache.TileCacheTest.testLZ4,pass,2000,2000,0,0
+org.recast4j.detour.tilecache.TempObstaclesTest.testDungeon,pass,2000,2000,0,0
+org.recast4j.detour.tilecache.TempObstaclesTest.testDungeonBox,pass,2000,2000,0,0
+org.recast4j.detour.tilecache.TileCacheNavigationTest.testFindPath,pass,2000,2000,0,0
+org.recast4j.detour.tilecache.io.TileCacheReaderTest.testDungeon,pass,2000,2000,0,0
+org.recast4j.detour.tilecache.TileCacheTest.testFastLz,pass,2000,2000,0,0
+org.recast4j.detour.tilecache.TileCacheFindPathTest.testFindPath,pass,2000,2000,0,0

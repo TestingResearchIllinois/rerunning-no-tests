@@ -1,0 +1,4 @@
+example.sos.modulith.orders.OrderManagerIntegrationTests.throwsExceptionInCaseProductIsOutOfStock,error,2000,0,2000,0
+example.sos.modulith.orders.OrderManagerIntegrationTests.completingAnOrderUpdatesInventory,error,2000,0,2000,0
+example.sos.modulith.orders.EmailNotificationTest.systemCrashDuringTransactionalListenerExecutionKeepsPublicationRegistration,error,2000,0,2000,0
+example.sos.modulith.orders.EmailNotificationTest.completingAnOrderUpdatesInventory,error,2000,0,2000,0

@@ -1,0 +1,4 @@
+ro.pippo.session.mongodb.MongoDBSessionDataStorageTest.testSave,pass,2000,2000,0,0
+ro.pippo.session.mongodb.MongoDBSessionDataStorageTest.testDelete,pass,2000,2000,0,0
+ro.pippo.session.mongodb.MongoDBSessionDataStorageTest.testGet,pass,2000,2000,0,0
+ro.pippo.session.mongodb.MongoDBSessionDataStorageTest.testCreate,pass,2000,2000,0,0

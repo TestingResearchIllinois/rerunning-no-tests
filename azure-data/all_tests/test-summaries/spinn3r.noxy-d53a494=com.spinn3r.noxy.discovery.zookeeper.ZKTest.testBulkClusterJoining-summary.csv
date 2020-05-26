@@ -1,0 +1,3 @@
+com.spinn3r.noxy.discovery.zookeeper.ZKTest.testDiscoveryListener,flaky,2000,1000,1000,0
+com.spinn3r.noxy.discovery.zookeeper.ZKTest.testBulkClusterJoining,flaky,2000,1000,1000,0
+com.spinn3r.noxy.discovery.zookeeper.ZKTest.testMembershipJoinAndLeave,flaky,2000,980,1020,0

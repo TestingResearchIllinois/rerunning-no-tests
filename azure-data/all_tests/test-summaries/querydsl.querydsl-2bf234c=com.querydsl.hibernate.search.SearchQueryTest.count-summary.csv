@@ -1,0 +1,13 @@
+com.querydsl.hibernate.search.SearchQueryTest.exists,pass,2000,2000,0,0
+com.querydsl.hibernate.search.SearchQueryTest.notExists,pass,2000,2000,0,0
+com.querydsl.hibernate.search.SearchQueryTest.count,failure,2000,0,0,2000
+com.querydsl.hibernate.search.SearchQueryTest.uniqueResult,pass,2000,2000,0,0
+com.querydsl.hibernate.search.SearchQueryTest.singleResult,pass,2000,2000,0,0
+com.querydsl.hibernate.search.SearchQueryTest.listResults,failure,2000,0,0,2000
+com.querydsl.hibernate.search.SearchQueryTest.paging,failure,2000,0,0,2000
+com.querydsl.hibernate.search.SearchQueryTest.unique_result_throws_exception_on_multiple_results,pass,2000,2000,0,0
+com.querydsl.hibernate.search.SearchQueryTest.ordering,pass,2000,2000,0,0
+com.querydsl.hibernate.search.SearchQueryTest.no_where,pass,2000,2000,0,0
+com.querydsl.hibernate.search.SearchQueryTest.limit_max_value,pass,2000,2000,0,0
+com.querydsl.hibernate.search.SearchQueryTest.list,pass,2000,2000,0,0
+com.querydsl.hibernate.search.SearchSerializerTest.toField,pass,2000,2000,0,0

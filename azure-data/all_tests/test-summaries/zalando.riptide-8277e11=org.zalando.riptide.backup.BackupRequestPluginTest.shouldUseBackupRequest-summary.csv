@@ -1,0 +1,10 @@
+org.zalando.riptide.backup.BackupRequestPluginTest.shouldUseOriginalRequest,pass,2000,2000,0,0
+org.zalando.riptide.backup.BackupRequestPluginTest.shouldSendBackupRequestForCustomSafeDetectedRequest,pass,2000,2000,0,0
+org.zalando.riptide.backup.BackupRequestPluginTest.shouldNotSendBackupRequestForGetWithBodyWithoutOverride,pass,2000,2000,0,0
+org.zalando.riptide.backup.BackupRequestPluginTest.shouldUseBackupRequest,pass,2000,2000,0,0
+org.zalando.riptide.backup.EnforceCoverageTest.shouldUsePrimaryConstructor,pass,2000,2000,0,0
+org.zalando.riptide.backup.BackupRequestPluginTest.shouldSendBackupRequestsForGetWithBody,pass,2000,2000,0,0
+org.zalando.riptide.backup.BackupRequestPluginTest.shouldUseFailedBackupRequest,pass,2000,2000,0,0
+org.zalando.riptide.backup.BackupRequestPluginTest.shouldCancelRequests,pass,2000,2000,0,0
+org.zalando.riptide.backup.BackupRequestPluginTest.shouldNotSendBackupRequestIfFastEnough,pass,2000,2000,0,0
+org.zalando.riptide.backup.BackupRequestPluginTest.shouldNotSendBackupRequestForNonSafeRequests,pass,2000,2000,0,0

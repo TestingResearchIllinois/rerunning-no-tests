@@ -1,0 +1,8 @@
+org.apache.dubbo.rpc.protocol.http.HttpProtocolTest.testGenericInvokeWithBean,pass,2000,2000,0,0
+org.apache.dubbo.rpc.protocol.http.HttpProtocolTest.testGenericInvokeWithNativeJava,pass,2000,2000,0,0
+org.apache.dubbo.rpc.protocol.http.HttpProtocolTest.testCustomException,pass,2000,2000,0,0
+org.apache.dubbo.rpc.protocol.http.HttpProtocolTest.testHttpProtocol,pass,2000,2000,0,0
+org.apache.dubbo.rpc.protocol.http.HttpProtocolTest.testSimpleClient,pass,2000,2000,0,0
+org.apache.dubbo.rpc.protocol.http.HttpProtocolTest.testGenericInvoke,pass,2000,2000,0,0
+org.apache.dubbo.rpc.protocol.http.HttpProtocolTest.testOverload,pass,2000,2000,0,0
+org.apache.dubbo.rpc.protocol.http.HttpProtocolTest.testTimeOut,pass,2000,2000,0,0

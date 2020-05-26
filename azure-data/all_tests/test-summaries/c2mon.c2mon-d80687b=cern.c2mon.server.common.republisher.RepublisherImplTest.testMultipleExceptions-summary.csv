@@ -1,0 +1,10 @@
+cern.c2mon.server.common.republisher.RepublisherImplTest.testNonJmsException,pass,2000,2000,0,0
+cern.c2mon.server.common.republisher.RepublisherImplTest.testMultiplePublicationsWithExceptions,flaky,2000,1980,0,20
+cern.c2mon.server.common.alarm.ValueAlarmConditionTest.testEnumHandling,pass,2000,2000,0,0
+cern.c2mon.server.common.republisher.RepublisherImplTest.testSuccessiveRepublication,pass,2000,2000,0,0
+cern.c2mon.server.common.republisher.RepublisherImplTest.testNotStartedException,pass,2000,2000,0,0
+cern.c2mon.server.common.republisher.RepublisherImplTest.testMultipleExceptions,flaky,2000,1993,0,7
+cern.c2mon.server.common.republisher.RepublisherImplTest.testFailToPublish,pass,2000,2000,0,0
+cern.c2mon.server.common.republisher.RepublisherImplTest.testSingleRepublication,pass,2000,2000,0,0
+cern.c2mon.server.common.republisher.RepublisherImplTest.testMultipleRepublication,pass,2000,2000,0,0
+cern.c2mon.server.common.republisher.RepublisherImplTest.testSingleRepublicationAfterException,pass,2000,2000,0,0

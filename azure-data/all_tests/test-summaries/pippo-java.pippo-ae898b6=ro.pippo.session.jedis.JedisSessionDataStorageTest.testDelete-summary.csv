@@ -1,0 +1,5 @@
+ro.pippo.session.jedis.JedisSessionDataStorageTest.testSave,pass,2000,2000,0,0
+ro.pippo.session.jedis.JedisSessionDataStorageTest.testDelete,pass,2000,2000,0,0
+ro.pippo.session.jedis.JedisSessionDataStorageTest.testGet,pass,2000,2000,0,0
+ro.pippo.session.jedis.JedisSessionDataStorageTest.testGetExpired,pass,2000,2000,0,0
+ro.pippo.session.jedis.JedisSessionDataStorageTest.testCreate,pass,2000,2000,0,0

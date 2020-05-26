@@ -1,0 +1,14 @@
+org.apache.dubbo.remoting.transport.netty.NettyClientTest.testClientClose,pass,2000,2000,0,0
+org.apache.dubbo.remoting.transport.netty.ClientsTest.testGetTransportEmpty,pass,2000,2000,0,0
+org.apache.dubbo.remoting.exchange.support.header.HeartbeatHandlerTest.testServerHeartbeat,pass,2000,2000,0,0
+org.apache.dubbo.remoting.transport.netty.ClientReconnectTest.testReconnectWarnLog,flaky,2000,1997,0,3
+org.apache.dubbo.remoting.exchange.support.header.HeartbeatHandlerTest.testHeartbeat,flaky,2000,1992,0,8
+org.apache.dubbo.remoting.transport.netty.ClientsTest.testGetTransport3,pass,2000,2000,0,0
+org.apache.dubbo.remoting.transport.netty.NettyStringTest.testHandler,pass,2000,2000,0,0
+org.apache.dubbo.remoting.transport.netty.NettyClientTest.testServerClose,pass,2000,2000,0,0
+org.apache.dubbo.remoting.transport.netty.ThreadNameTest.testThreadName,flaky,2000,1998,0,2
+org.apache.dubbo.remoting.transport.netty.ClientsTest.testGetTransportNull,pass,2000,2000,0,0
+org.apache.dubbo.remoting.transport.netty.NettyClientToServerTest.testFuture,pass,2000,2000,0,0
+org.apache.dubbo.remoting.transport.netty.ClientsTest.testGetTransportWrong,pass,2000,2000,0,0
+org.apache.dubbo.remoting.transport.netty.ClientReconnectTest.testReconnect,pass,2000,2000,0,0
+org.apache.dubbo.remoting.exchange.support.header.HeartbeatHandlerTest.testClientHeartbeat,pass,2000,2000,0,0

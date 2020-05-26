@@ -1,0 +1,7 @@
+cn.hutool.cron.demo.CronTest.addAndRemoveTest,pass,2000,2000,0,0
+cn.hutool.cron.demo.CronTest.customCronTest,pass,2000,2000,0,0
+cn.hutool.cron.test.CronTest.quartzRangePatternTest,pass,2000,2000,0,0
+cn.hutool.cron.demo.CronTest.cronTest,pass,2000,2000,0,0
+cn.hutool.cron.test.CronTest.matchAllTest,pass,2000,2000,0,0
+cn.hutool.cron.test.CronTest.CronPatternTest,pass,2000,2000,0,0
+cn.hutool.cron.test.CronTest.quartzPatternTest,pass,2000,2000,0,0
