@@ -1,7 +1,7 @@
 Contents of this directory
-- all.csv contains the summary of each test running 2000 times in isolation. Specifically, for each test the test_name,summarized_test_result,num_runs,num_pass,num_error,num_fail
+- all.csv contains the summary of each test running 2000 times in isolation. Specifically, for each test the `test_name,summarized_test_result,num_runs,num_pass,num_error,num_fail`
 
-A summarized_test_result is pass, error, or failure if all of its runs pass, error, or fail (respectively). The summarized_test_result is flaky if it has inconsistent results.
+A `summarized_test_result` is pass, error, or failure if all of its runs pass, error, or fail (respectively). The `summarized_test_result` is flaky if it has inconsistent results.
 
 The following modules are known to have less than 2000 runs. Wing is looking into getting these up to 2000.
 - org.apache.dubbo.remoting.transport.netty.ClientReconnectTest.testReconnectWarnLog,pass,1000,1000,0,0
