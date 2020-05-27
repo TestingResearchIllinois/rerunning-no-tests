@@ -5,5 +5,6 @@ Contents of this directory
 To obtain the mvn-test logs and XML files for specific tests, the
 relevant locations are the following on our upcrc5 machine.
 
-All tests runs - /scratch/winglam2/azure-scripts/src/48-no-mods-output
-Isolation runs - /scratch/winglam2/azure-scripts/src/251-nods-found-batch-output
+All tests runs - upcrc5:/scratch/winglam2/azure-scripts/src/48-no-mods-output
+
+Isolation runs - upcrc5:/scratch/winglam2/azure-scripts/src/251-nods-found-batch-output
