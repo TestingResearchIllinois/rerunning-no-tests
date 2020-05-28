@@ -1,0 +1,17 @@
+test_name,summarized_test_result,num_runs,num_pass,num_error,num_fail
+com.baidu.disconf.client.test.common.BaseSpringMockTestCase.pass,pass,3600,3600,0,0
+com.baidu.disconf.client.test.common.BaseSpringTestCase.pass,pass,3600,3600,0,0
+com.baidu.disconf.client.test.config.ConfigMgrTestCase.pass,pass,3600,3600,0,0
+com.baidu.disconf.client.test.core.DisconfCoreMgrTestCase.pass,pass,3600,3600,0,0
+com.baidu.disconf.client.test.core.filetype.FileTypeProcessorUtilsTestCase.getKvMapTest,pass,3600,3600,0,0
+com.baidu.disconf.client.test.DisconfMgrTestCase.demo,pass,3600,3600,0,0
+com.baidu.disconf.client.test.DisconfMgrTestCase.pass,pass,3600,3600,0,0
+com.baidu.disconf.client.test.fetcher.FetcherMgrMgrTestCase.pass,pass,3600,3600,0,0
+com.baidu.disconf.client.test.fetcher.FetcherMgrMgrTestCase.testDownloadFileFromServer,pass,3600,3600,0,0
+com.baidu.disconf.client.test.fetcher.FetcherMgrMgrTestCase.testGetValueFromServer,pass,3600,3600,0,0
+com.baidu.disconf.client.test.scan.inner.ScanPackTestCase.pass,pass,3600,3600,0,0
+com.baidu.disconf.client.test.scan.inner.ScanPackTestCase.scan,pass,3600,3600,0,0
+com.baidu.disconf.client.test.scan.ScanMgrTestCase.pass,pass,3600,3600,0,0
+com.baidu.disconf.client.test.scan.ScanMgrTestCase.scan,pass,3600,3600,0,0
+com.baidu.disconf.client.test.store.DisconfStoreMgrTestCase.pass,pass,3600,3600,0,0
+com.baidu.disconf.client.test.watch.WatchMgrTestCase.pass,pass,3600,3600,0,0

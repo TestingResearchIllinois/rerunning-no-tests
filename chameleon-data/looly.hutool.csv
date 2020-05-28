@@ -1,0 +1,8 @@
+test_name,summarized_test_result,num_runs,num_pass,num_error,num_fail
+cn.hutool.cron.demo.CronTest.addAndRemoveTest,pass,3200,3200,0,0
+cn.hutool.cron.demo.CronTest.cronTest,pass,3200,3200,0,0
+cn.hutool.cron.demo.CronTest.customCronTest,pass,3200,3200,0,0
+cn.hutool.cron.test.CronTest.CronPatternTest,pass,3200,3200,0,0
+cn.hutool.cron.test.CronTest.matchAllTest,flaky,3200,3196,0,4
+cn.hutool.cron.test.CronTest.quartzPatternTest,pass,3200,3200,0,0
+cn.hutool.cron.test.CronTest.quartzRangePatternTest,pass,3200,3200,0,0

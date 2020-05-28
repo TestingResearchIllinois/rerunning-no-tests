@@ -1,0 +1,13 @@
+test_name,summarized_test_result,num_runs,num_pass,num_error,num_fail
+com.codingchili.TestConfiguration.shouldLoadConfiguration,pass,1200,1200,0,0
+com.codingchili.TestParser.failParseInvalid,pass,1200,1200,0,0
+com.codingchili.TestParser.generateMonsterCSV,pass,1200,1200,0,0
+com.codingchili.TestParser.testParse2007,pass,1200,1200,0,0
+com.codingchili.TestParser.testParseBig,pass,1200,1200,0,0
+com.codingchili.TestParser.testParseCSV,pass,1200,1200,0,0
+com.codingchili.TestParser.testParseMissingExt,pass,1200,1200,0,0
+com.codingchili.TestParser.testParseMissingParser,pass,1200,1200,0,0
+com.codingchili.TestParser.testParseOOXML,pass,1200,1200,0,0
+com.codingchili.TestWebsite.shouldFailUpload,pass,1200,1200,0,0
+com.codingchili.TestWebsite.shouldGetStartPage,pass,1200,1200,0,0
+com.codingchili.TestWriter.shouldWriteToElasticPort,flaky,1200,238,962,0

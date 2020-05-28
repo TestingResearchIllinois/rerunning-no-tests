@@ -1,0 +1,10 @@
+test_name,summarized_test_result,num_runs,num_pass,num_error,num_fail
+cn.edu.hfut.dmic.webcollector.util.CharsetDetectorTest.testGuessEncoding,pass,3200,3200,0,0
+cn.edu.hfut.dmic.webcollector.util.CharsetDetectorTest.testGuessEncodingByMozilla,pass,3200,3200,0,0
+cn.edu.hfut.dmic.webcollector.util.CrawlDatumsTest.testAdd,pass,3200,3200,0,0
+cn.edu.hfut.dmic.webcollector.util.CrawlDatumsTest.testAddAndReturn,pass,3200,3200,0,0
+cn.edu.hfut.dmic.webcollector.util.CrawlDatumTest.testKey,pass,3200,3200,0,0
+cn.edu.hfut.dmic.webcollector.util.DBManagerTest.testBerkeleyDBInjector,pass,3200,3200,0,0
+cn.edu.hfut.dmic.webcollector.util.DBManagerTest.testRocksDBInjector,pass,3200,3200,0,0
+cn.edu.hfut.dmic.webcollector.util.MetaTest.testMetaSetterAndGetter,pass,3200,3200,0,0
+cn.edu.hfut.dmic.webcollector.util.OkHttpRequesterTest.testHttpCode,pass,3200,0,0,3200

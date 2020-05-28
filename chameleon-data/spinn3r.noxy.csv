@@ -1,0 +1,4 @@
+test_name,summarized_test_result,num_runs,num_pass,num_error,num_fail
+com.spinn3r.noxy.discovery.zookeeper.ZKTest.testBulkClusterJoining,flaky,2600,1326,1274,0
+com.spinn3r.noxy.discovery.zookeeper.ZKTest.testDiscoveryListener,flaky,2600,1326,1274,0
+com.spinn3r.noxy.discovery.zookeeper.ZKTest.testMembershipJoinAndLeave,flaky,2600,1300,1300,0
