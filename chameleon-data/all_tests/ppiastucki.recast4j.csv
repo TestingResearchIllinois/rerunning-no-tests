@@ -1,0 +1,12 @@
+test_name,summarized_test_result,num_runs,num_pass,num_error,num_fail
+org.recast4j.detour.tilecache.io.TileCacheReaderTest.testDungeon,pass,600,600,0,0
+org.recast4j.detour.tilecache.io.TileCacheReaderTest.testNavmesh,pass,600,600,0,0
+org.recast4j.detour.tilecache.io.TileCacheReaderWriterTest.testFastLz,pass,600,600,0,0
+org.recast4j.detour.tilecache.io.TileCacheReaderWriterTest.testLZ4,pass,600,600,0,0
+org.recast4j.detour.tilecache.TempObstaclesTest.testDungeon,pass,600,600,0,0
+org.recast4j.detour.tilecache.TempObstaclesTest.testDungeonBox,pass,600,600,0,0
+org.recast4j.detour.tilecache.TileCacheFindPathTest.testFindPath,pass,600,600,0,0
+org.recast4j.detour.tilecache.TileCacheNavigationTest.testFindPath,pass,600,600,0,0
+org.recast4j.detour.tilecache.TileCacheTest.testFastLz,pass,600,600,0,0
+org.recast4j.detour.tilecache.TileCacheTest.testLZ4,pass,600,600,0,0
+org.recast4j.detour.tilecache.TileCacheTest.testPerformance,pass,600,600,0,0

@@ -1,0 +1,3 @@
+test_name,summarized_test_result,num_runs,num_pass,num_error,num_fail
+com.lcw.one.main.EmailServiceTest.sendEmail,pass,600,0,600,0
+com.lcw.one.main.EmailServiceTest.sendEmailList,pass,600,0,600,0
