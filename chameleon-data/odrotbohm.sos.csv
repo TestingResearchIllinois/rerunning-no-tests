@@ -1,0 +1,5 @@
+test_name,summarized_test_result,num_runs,num_pass,num_error,num_fail
+example.sos.modulith.orders.EmailNotificationTest.completingAnOrderUpdatesInventory,pass,1800,0,1800,0
+example.sos.modulith.orders.EmailNotificationTest.systemCrashDuringTransactionalListenerExecutionKeepsPublicationRegistration,pass,1800,0,1800,0
+example.sos.modulith.orders.OrderManagerIntegrationTests.completingAnOrderUpdatesInventory,pass,1800,0,1800,0
+example.sos.modulith.orders.OrderManagerIntegrationTests.throwsExceptionInCaseProductIsOutOfStock,pass,1800,0,1800,0
