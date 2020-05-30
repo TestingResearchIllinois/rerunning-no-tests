@@ -1,0 +1,8 @@
+https://github.com/apache/incubator-dubbo,737f7a7ea67832d7f17517326fb2491d0a086dd7,org.apache.dubbo.rpc.protocol.http.HttpProtocolTest.testHttpProtocol,./dubbo-rpc/dubbo-rpc-http,pass,2000,2000,0,0
+https://github.com/apache/incubator-dubbo,737f7a7ea67832d7f17517326fb2491d0a086dd7,org.apache.dubbo.rpc.protocol.http.HttpProtocolTest.testGenericInvokeWithBean,./dubbo-rpc/dubbo-rpc-http,pass,2000,2000,0,0
+https://github.com/apache/incubator-dubbo,737f7a7ea67832d7f17517326fb2491d0a086dd7,org.apache.dubbo.rpc.protocol.http.HttpProtocolTest.testSimpleClient,./dubbo-rpc/dubbo-rpc-http,pass,2000,2000,0,0
+https://github.com/apache/incubator-dubbo,737f7a7ea67832d7f17517326fb2491d0a086dd7,org.apache.dubbo.rpc.protocol.http.HttpProtocolTest.testCustomException,./dubbo-rpc/dubbo-rpc-http,pass,2000,2000,0,0
+https://github.com/apache/incubator-dubbo,737f7a7ea67832d7f17517326fb2491d0a086dd7,org.apache.dubbo.rpc.protocol.http.HttpProtocolTest.testGenericInvokeWithNativeJava,./dubbo-rpc/dubbo-rpc-http,pass,2000,2000,0,0
+https://github.com/apache/incubator-dubbo,737f7a7ea67832d7f17517326fb2491d0a086dd7,org.apache.dubbo.rpc.protocol.http.HttpProtocolTest.testOverload,./dubbo-rpc/dubbo-rpc-http,pass,2000,2000,0,0
+https://github.com/apache/incubator-dubbo,737f7a7ea67832d7f17517326fb2491d0a086dd7,org.apache.dubbo.rpc.protocol.http.HttpProtocolTest.testGenericInvoke,./dubbo-rpc/dubbo-rpc-http,pass,2000,2000,0,0
+https://github.com/apache/incubator-dubbo,737f7a7ea67832d7f17517326fb2491d0a086dd7,org.apache.dubbo.rpc.protocol.http.HttpProtocolTest.testTimeOut,./dubbo-rpc/dubbo-rpc-http,pass,2000,2000,0,0

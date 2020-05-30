@@ -1,0 +1,12 @@
+https://github.com/codingchili/excelastic,6bb7884b1e70f9e588d75bdaf132a84f6e896a7a,com.codingchili.TestParser.testParse2007,.,pass,2000,2000,0,0
+https://github.com/codingchili/excelastic,6bb7884b1e70f9e588d75bdaf132a84f6e896a7a,com.codingchili.TestWriter.shouldWriteToElasticPort,.,pass,2000,2000,0,0
+https://github.com/codingchili/excelastic,6bb7884b1e70f9e588d75bdaf132a84f6e896a7a,com.codingchili.TestConfiguration.shouldLoadConfiguration,.,pass,2000,2000,0,0
+https://github.com/codingchili/excelastic,6bb7884b1e70f9e588d75bdaf132a84f6e896a7a,com.codingchili.TestParser.generateMonsterCSV,.,pass,2000,2000,0,0
+https://github.com/codingchili/excelastic,6bb7884b1e70f9e588d75bdaf132a84f6e896a7a,com.codingchili.TestParser.testParseMissingParser,.,pass,2000,2000,0,0
+https://github.com/codingchili/excelastic,6bb7884b1e70f9e588d75bdaf132a84f6e896a7a,com.codingchili.TestParser.testParseOOXML,.,pass,2000,2000,0,0
+https://github.com/codingchili/excelastic,6bb7884b1e70f9e588d75bdaf132a84f6e896a7a,com.codingchili.TestParser.testParseMissingExt,.,pass,2000,2000,0,0
+https://github.com/codingchili/excelastic,6bb7884b1e70f9e588d75bdaf132a84f6e896a7a,com.codingchili.TestParser.testParseCSV,.,pass,2000,2000,0,0
+https://github.com/codingchili/excelastic,6bb7884b1e70f9e588d75bdaf132a84f6e896a7a,com.codingchili.TestParser.testParseBig,.,pass,2000,2000,0,0
+https://github.com/codingchili/excelastic,6bb7884b1e70f9e588d75bdaf132a84f6e896a7a,com.codingchili.TestWebsite.shouldFailUpload,.,pass,2000,2000,0,0
+https://github.com/codingchili/excelastic,6bb7884b1e70f9e588d75bdaf132a84f6e896a7a,com.codingchili.TestParser.failParseInvalid,.,pass,2000,2000,0,0
+https://github.com/codingchili/excelastic,6bb7884b1e70f9e588d75bdaf132a84f6e896a7a,com.codingchili.TestWebsite.shouldGetStartPage,.,pass,2000,2000,0,0

@@ -24,10 +24,8 @@ com.github.kagkarlsson.scheduler.SchedulerTest.scheduler_should_execute_reschedu
 com.baidu.disconf.client.test.DisconfMgrTestCase.demo,./disconf-client,16
 com.lcw.one.main.EmailServiceTest.sendEmailList,./one-notify,2
 cn.hutool.cron.test.CronTest.matchAllTest,./hutool-cron,7
-com.marcosbarbero.tests.it.Bucket4jInfinispanApplicationTestIT.testExceedingQuotaCapacityRequest,./spring-cloud-zuul-ratelimit-tests/bucket4j-infinispan,7
 timely.store.iterators.TimeSeriesGroupingIteratorTest.testMultipleTimeSeriesMovingAverage,./server,144
 example.sos.modulith.orders.EmailNotificationTest.completingAnOrderUpdatesInventory,./20-modulith,4
-com.openpojo.issues.issue112.IssueTest.shouldNotFail,.,1185
 com.oracle.bmc.objectstorage.transfer.ProgressTrackerTest.multipartUploadProgressTrackerFactory_simulateRealLifeScenario,./bmc-objectstorage/bmc-objectstorage-extensions,62
 cloud.orbit.actors.extensions.test.LengthFieldHandlerTest.randomMessages,./actors/runtime,20
 com.cloudera.oryx.common.io.IOUtilsTest.testDistinctFreePorts,./framework/oryx-common,92

@@ -1,0 +1,11 @@
+https://github.com/ppiastucki/recast4j,01d478e190b731d2fe861e3b969b4c8dd04f0ede,org.recast4j.detour.tilecache.TileCacheFindPathTest.testFindPath,./detourtilecache,pass,2000,2000,0,0
+https://github.com/ppiastucki/recast4j,01d478e190b731d2fe861e3b969b4c8dd04f0ede,org.recast4j.detour.tilecache.TempObstaclesTest.testDungeon,./detourtilecache,pass,2000,2000,0,0
+https://github.com/ppiastucki/recast4j,01d478e190b731d2fe861e3b969b4c8dd04f0ede,org.recast4j.detour.tilecache.io.TileCacheReaderWriterTest.testLZ4,./detourtilecache,pass,2000,2000,0,0
+https://github.com/ppiastucki/recast4j,01d478e190b731d2fe861e3b969b4c8dd04f0ede,org.recast4j.detour.tilecache.io.TileCacheReaderTest.testDungeon,./detourtilecache,pass,2000,2000,0,0
+https://github.com/ppiastucki/recast4j,01d478e190b731d2fe861e3b969b4c8dd04f0ede,org.recast4j.detour.tilecache.TileCacheTest.testPerformance,./detourtilecache,pass,2000,2000,0,0
+https://github.com/ppiastucki/recast4j,01d478e190b731d2fe861e3b969b4c8dd04f0ede,org.recast4j.detour.tilecache.io.TileCacheReaderTest.testNavmesh,./detourtilecache,pass,2000,2000,0,0
+https://github.com/ppiastucki/recast4j,01d478e190b731d2fe861e3b969b4c8dd04f0ede,org.recast4j.detour.tilecache.TileCacheTest.testFastLz,./detourtilecache,pass,2000,2000,0,0
+https://github.com/ppiastucki/recast4j,01d478e190b731d2fe861e3b969b4c8dd04f0ede,org.recast4j.detour.tilecache.TileCacheNavigationTest.testFindPath,./detourtilecache,pass,2000,2000,0,0
+https://github.com/ppiastucki/recast4j,01d478e190b731d2fe861e3b969b4c8dd04f0ede,org.recast4j.detour.tilecache.io.TileCacheReaderWriterTest.testFastLz,./detourtilecache,pass,2000,2000,0,0
+https://github.com/ppiastucki/recast4j,01d478e190b731d2fe861e3b969b4c8dd04f0ede,org.recast4j.detour.tilecache.TempObstaclesTest.testDungeonBox,./detourtilecache,pass,2000,2000,0,0
+https://github.com/ppiastucki/recast4j,01d478e190b731d2fe861e3b969b4c8dd04f0ede,org.recast4j.detour.tilecache.TileCacheTest.testLZ4,./detourtilecache,pass,2000,2000,0,0
