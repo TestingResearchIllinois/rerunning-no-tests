@@ -1,5 +1,6 @@
 Contents of this directory
 - test-summaries contains the summary of each test. Specifically, for each test the `slug,sha,test_name,module_path,summarized_test_result,num_runs,num_pass,num_error,num_fail`
+- per-module-order contains for each module the `test_class_order_md5sum,num_test_class,module_path,slug,sha`. This information is meant to help easily see whether any orders are the same or not for the modules we ran.
 
 You can download the per-test results from the following (the zip file is about 150MB).
 http://mir.cs.illinois.edu/winglam/personal/all_tests_fixed_order_per-test-results.zip
