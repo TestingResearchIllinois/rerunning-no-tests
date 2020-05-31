@@ -1,3 +1,9 @@
+https://github.com/alibaba/fastjson,e05e9c5e4be580691cc55a59f3256595393203a1,com.alibaba.json.bvt.issue_1200.Issue1298.test_for_issue_1,.,failure,2000,0,0,2000
+https://github.com/alibaba/fastjson,e05e9c5e4be580691cc55a59f3256595393203a1,com.alibaba.json.bvt.issue_1200.Issue1298.test_for_issue,.,failure,2000,0,0,2000
+https://github.com/alibaba/fastjson,e05e9c5e4be580691cc55a59f3256595393203a1,com.alibaba.json.bvt.parser.DefaultExtJSONParser_parseArray.test_7,.,failure,2000,0,0,2000
+https://github.com/alibaba/fastjson,e05e9c5e4be580691cc55a59f3256595393203a1,com.alibaba.json.bvt.parser.DefaultExtJSONParser_parseArray.test_8,.,failure,2000,0,0,2000
+https://github.com/alibaba/fastjson,e05e9c5e4be580691cc55a59f3256595393203a1,com.alibaba.json.bvt.serializer.ConcurrentHashMapTest5.test_concurrentHashmap,.,pass,2000,2000,0,0
+https://github.com/alibaba/fastjson,e05e9c5e4be580691cc55a59f3256595393203a1,com.alibaba.json.bvt.serializer.ConcurrentHashMapTest6.test_concurrentHashmap,.,pass,2000,2000,0,0
 https://github.com/alibaba/fastjson,e05e9c5e4be580691cc55a59f3256595393203a1,com.alibaba.json.bvt.parser.deser.AbstractSerializeTest.test_mapping_1,.,pass,2000,2000,0,0
 https://github.com/alibaba/fastjson,e05e9c5e4be580691cc55a59f3256595393203a1,com.alibaba.json.bvt.parser.deser.AbstractSerializeTest.test_mapping_2,.,pass,2000,2000,0,0
 https://github.com/apache/hbase,801fc05e9c082ab12c7c1207087d3667ab162d1a,org.apache.hadoop.hbase.procedure2.store.wal.TestWALProcedureStore.testEmptyRoll,./hbase-procedure,pass,2000,2000,0,0
@@ -211,3 +217,5 @@ https://github.com/wso2/carbon-apimgt,a82213e40e7e6aa529341fdd1d1c3de776949e64,o
 https://github.com/zalando/riptide,8277e11fc069d8e24df0d233ef2577cc75659b75,org.zalando.riptide.backup.BackupRequestPluginTest.shouldUseBackupRequest,./riptide-backup,pass,2000,2000,0,0
 https://github.com/zalando/riptide,8277e11fc069d8e24df0d233ef2577cc75659b75,org.zalando.riptide.failsafe.RetryAfterDelayFunctionTest.shouldRetryOnDemandWithDynamicDelay,./riptide-failsafe,flaky,2000,1362,638,0
 https://github.com/zalando/riptide,8277e11fc069d8e24df0d233ef2577cc75659b75,org.zalando.riptide.failsafe.RetryAfterDelayFunctionTest.shouldRetryWithDynamicDelayDate,./riptide-failsafe,flaky,2000,1088,912,0
+https://github.com/square/retrofit,ae28c3d5f6fe54f6ca409cdf82106efb47609f8f,retrofit2.adapter.rxjava.SingleThrowingTest.responseThrowingInOnErrorDeliveredToPlugin,./retrofit-adapters/rxjava,pass,2000,2000,0,0
+https://github.com/TooTallNate/Java-WebSocket,fa3909c391195178ccf5a92d4ac342a30ae247c8,org.java_websocket.issues.Issue256Test.runReconnectBlockingScenario0,.,flaky,2000,1982,16,2
