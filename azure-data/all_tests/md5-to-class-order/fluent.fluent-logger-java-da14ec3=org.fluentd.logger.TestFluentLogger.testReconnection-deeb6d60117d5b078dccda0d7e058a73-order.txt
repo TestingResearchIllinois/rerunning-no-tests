@@ -1,0 +1,5 @@
+org.fluentd.logger.TestFluentLogger
+org.fluentd.logger.sender.TestNullSender
+org.fluentd.logger.sender.TestSenderFluentdDownOperation
+org.fluentd.logger.sender.TestRawSocketSender
+org.fluentd.logger.TestFluentLogFactory

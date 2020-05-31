@@ -1,0 +1,11 @@
+io.elasticjob.lite.lifecycle.restful.RestfulServerTest
+io.elasticjob.lite.lifecycle.restful.RestfulExceptionTest
+io.elasticjob.lite.lifecycle.internal.statistics.ShardingStatisticsAPIImplTest
+io.elasticjob.lite.lifecycle.internal.statistics.ServerStatisticsAPIImplTest
+io.elasticjob.lite.lifecycle.internal.statistics.JobStatisticsAPIImplTest
+io.elasticjob.lite.lifecycle.internal.reg.RegistryCenterFactoryTest
+io.elasticjob.lite.lifecycle.internal.settings.JobSettingsAPIImplTest
+io.elasticjob.lite.lifecycle.internal.operate.ShardingOperateAPIImplTest
+io.elasticjob.lite.lifecycle.internal.operate.JobOperateAPIImplTest
+io.elasticjob.lite.lifecycle.domain.ShardingStatusTest
+io.elasticjob.lite.lifecycle.api.JobAPIFactoryTest

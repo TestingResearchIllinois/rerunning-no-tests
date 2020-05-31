@@ -1,0 +1,5 @@
+io.vertx.rabbitmq.RabbitMQOptionsTest
+io.vertx.rabbitmq.RabbitMQConsumptionStreamingTest
+io.vertx.rabbitmq.RabbitMQClientReconnectTest
+io.vertx.rabbitmq.RabbitMQServiceTest
+io.vertx.rabbitmq.impl.UtilsTest
