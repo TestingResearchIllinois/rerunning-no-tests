@@ -4,7 +4,7 @@ https://github.com/apache/hbase,801fc05e9c082ab12c7c1207087d3667ab162d1a,org.apa
 https://github.com/apache/hbase,801fc05e9c082ab12c7c1207087d3667ab162d1a,org.apache.hadoop.hbase.procedure2.store.wal.TestWALProcedureStore.testRestartWithoutData,./hbase-procedure,flaky,2000,1993,0,7
 https://github.com/apache/hbase,801fc05e9c082ab12c7c1207087d3667ab162d1a,org.apache.hadoop.hbase.procedure2.TestProcedureSkipPersistence.test,./hbase-procedure,flaky,2000,1799,0,201
 https://github.com/apache/incubator-dubbo,737f7a7ea67832d7f17517326fb2491d0a086dd7,org.apache.dubbo.remoting.exchange.support.header.HeartbeatHandlerTest.testHeartbeat,./dubbo-remoting/dubbo-remoting-netty,pass,2000,2000,0,0
-https://github.com/apache/incubator-dubbo,737f7a7ea67832d7f17517326fb2491d0a086dd7,org.apache.dubbo.remoting.transport.netty.ClientReconnectTest.testReconnectWarnLog,./dubbo-remoting/dubbo-remoting-netty,pass,1000,1000,0,0
+https://github.com/apache/incubator-dubbo,737f7a7ea67832d7f17517326fb2491d0a086dd7,org.apache.dubbo.remoting.transport.netty.ClientReconnectTest.testReconnectWarnLog,./dubbo-remoting/dubbo-remoting-netty,pass,2000,2000,0,0
 https://github.com/apache/incubator-dubbo,737f7a7ea67832d7f17517326fb2491d0a086dd7,org.apache.dubbo.remoting.transport.netty.ThreadNameTest.testThreadName,./dubbo-remoting/dubbo-remoting-netty,flaky,2000,1994,0,6
 https://github.com/apache/incubator-dubbo,737f7a7ea67832d7f17517326fb2491d0a086dd7,org.apache.dubbo.rpc.protocol.dubbo.DubboLazyConnectTest.testSticky1,./dubbo-rpc/dubbo-rpc-dubbo,pass,2000,2000,0,0
 https://github.com/apache/incubator-dubbo,737f7a7ea67832d7f17517326fb2491d0a086dd7,org.apache.dubbo.rpc.protocol.dubbo.DubboProtocolTest.testDemoProtocol,./dubbo-rpc/dubbo-rpc-dubbo,pass,2000,2000,0,0
@@ -109,7 +109,7 @@ https://github.com/querydsl/querydsl,2bf234caf78549813a1e0f44d9c30ecc5ef734e3,co
 https://github.com/spinn3r/noxy,d53a49421f385c70b5abe7e8cda84ff3a7b59c71,com.spinn3r.noxy.discovery.zookeeper.ZKTest.testBulkClusterJoining,./noxy-discovery-zookeeper,pass,2000,2000,0,0
 https://github.com/spinn3r/noxy,d53a49421f385c70b5abe7e8cda84ff3a7b59c71,com.spinn3r.noxy.discovery.zookeeper.ZKTest.testDiscoveryListener,./noxy-discovery-zookeeper,pass,2000,2000,0,0
 https://github.com/spinn3r/noxy,d53a49421f385c70b5abe7e8cda84ff3a7b59c71,com.spinn3r.noxy.discovery.zookeeper.ZKTest.testMembershipJoinAndLeave,./noxy-discovery-zookeeper,pass,2000,2000,0,0
-https://github.com/spotify/helios,aebf68dcbdf9d3850478e8bddd2c478fa5fa282a,com.spotify.helios.testing.HealthCheckTest.test,./helios-testing,pass,700,700,0,0
+https://github.com/spotify/helios,aebf68dcbdf9d3850478e8bddd2c478fa5fa282a,com.spotify.helios.testing.HealthCheckTest.test,./helios-testing,pass,2000,2000,0,0
 https://github.com/spotify/helios,aebf68dcbdf9d3850478e8bddd2c478fa5fa282a,com.spotify.helios.testing.HeliosSoloDeploymentTest.testUndeployLeftoverJobs,./helios-testing,flaky,2000,1996,0,4
 https://github.com/spotify/helios,aebf68dcbdf9d3850478e8bddd2c478fa5fa282a,com.spotify.helios.testing.JobNamePrefixTest.testJobNamePrefix,./helios-testing,pass,900,900,0,0
 https://github.com/spotify/helios,aebf68dcbdf9d3850478e8bddd2c478fa5fa282a,com.spotify.helios.testing.ProberTest.testOverrideDefaultProber,./helios-testing,pass,2000,2000,0,0
