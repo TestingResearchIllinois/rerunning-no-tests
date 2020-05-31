@@ -1,5 +1,5 @@
-ro.pippo.session.jedis.JedisSessionDataStorageTest.testSave,pass,2000,2000,0,0
-ro.pippo.session.jedis.JedisSessionDataStorageTest.testDelete,pass,2000,2000,0,0
-ro.pippo.session.jedis.JedisSessionDataStorageTest.testGet,pass,2000,2000,0,0
-ro.pippo.session.jedis.JedisSessionDataStorageTest.testGetExpired,pass,2000,2000,0,0
-ro.pippo.session.jedis.JedisSessionDataStorageTest.testCreate,pass,2000,2000,0,0
+https://github.com/pippo-java/pippo,ae898b6c478af7365b04c2f5bf9331abf496b166,ro.pippo.session.jedis.JedisSessionDataStorageTest.testCreate,./pippo-session-parent/pippo-session-jedis,pass,2000,2000,0,0
+https://github.com/pippo-java/pippo,ae898b6c478af7365b04c2f5bf9331abf496b166,ro.pippo.session.jedis.JedisSessionDataStorageTest.testDelete,./pippo-session-parent/pippo-session-jedis,pass,2000,2000,0,0
+https://github.com/pippo-java/pippo,ae898b6c478af7365b04c2f5bf9331abf496b166,ro.pippo.session.jedis.JedisSessionDataStorageTest.testSave,./pippo-session-parent/pippo-session-jedis,pass,2000,2000,0,0
+https://github.com/pippo-java/pippo,ae898b6c478af7365b04c2f5bf9331abf496b166,ro.pippo.session.jedis.JedisSessionDataStorageTest.testGet,./pippo-session-parent/pippo-session-jedis,pass,2000,2000,0,0
+https://github.com/pippo-java/pippo,ae898b6c478af7365b04c2f5bf9331abf496b166,ro.pippo.session.jedis.JedisSessionDataStorageTest.testGetExpired,./pippo-session-parent/pippo-session-jedis,pass,2000,2000,0,0

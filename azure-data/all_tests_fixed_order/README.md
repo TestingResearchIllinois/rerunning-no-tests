@@ -5,4 +5,4 @@ Contents of this directory
 You can download the per-test results from the following (the zip file is about 150MB).
 http://mir.cs.illinois.edu/winglam/personal/all_tests_fixed_order_per-test-results.zip
 
-The per-test-results.zip contains for each test the `test_name,test_result,time_to_run_test,run_num,machine_id,test_class_order_md5sum,num_test_class,module_path,slug,sha`. When unzipped the contents occupy about 3.8GB.
+The all_tests_fixed_order_per-test-results.zip contains for each test the `test_name,test_result,time_to_run_test,run_num,machine_id,test_class_order_md5sum,num_test_class,module_path,slug,sha`. When unzipped the contents occupy about 3.8GB.

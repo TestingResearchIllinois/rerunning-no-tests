@@ -1,2 +1,2 @@
-net.redpipe.discovery.DiscoveryTest.checkWebClient,pass,2000,2000,0,0
-net.redpipe.discovery.DiscoveryTest.checkServiceDiscovery,pass,2000,2000,0,0
+https://github.com/fromage/redpipe,0aff891d6befdf0dcc2bdbfda22262cdf82ac66f,net.redpipe.discovery.DiscoveryTest.checkWebClient,./redpipe-service-discovery,pass,2000,2000,0,0
+https://github.com/fromage/redpipe,0aff891d6befdf0dcc2bdbfda22262cdf82ac66f,net.redpipe.discovery.DiscoveryTest.checkServiceDiscovery,./redpipe-service-discovery,pass,2000,2000,0,0
