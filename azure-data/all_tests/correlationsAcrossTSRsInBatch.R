@@ -24,8 +24,13 @@ allAzureDetailData <- bind_rows(azureDetailData) %>% mutate(slug=str_replace(slu
 allAzureFlakies <- allAzureDetailData %>% group_by(test_name) %>% filter(any(test_result=="pass") & (any(test_result=="error") | any(test_result=="failure")))
 
 # average number of consecutive test failures for each order
-# allAzureDetailData %>% filter(sum()) %>% group_by(machine_id,slug,module_path) %>%
-#   group_map(split,cumsum(c(TRUE, diff(x) != 1)))
+allAzureFlakies %>%
+	filter(test_result=="error" | test_result=="failure") %>%
+	group_by(machine_id,slug,module_path,test_name) %>%
+	arrange(run_num) %>%
+	summarize(rounds=paste0(run_num,collapse=" ")) %>%
+	mutate(rounds=lapply(str_split(rounds," "),as.integer)) %>%
+	mutate(rounds=max(lengths(split(unlist(rounds),cumsum(c(TRUE,diff(unlist(rounds)) != 1))))))
 
 # average number of consecutive test failures for each order and module
 
