@@ -1,0 +1,16 @@
+https://github.com/knightliao/disconf,2ac5c8275ad8cdc101522ad01a8ba87e53b73b68,com.baidu.disconf.client.test.config.ConfigMgrTestCase.pass,./disconf-client,pass,2000,2000,0,0
+https://github.com/knightliao/disconf,2ac5c8275ad8cdc101522ad01a8ba87e53b73b68,com.baidu.disconf.client.test.watch.WatchMgrTestCase.pass,./disconf-client,pass,2000,2000,0,0
+https://github.com/knightliao/disconf,2ac5c8275ad8cdc101522ad01a8ba87e53b73b68,com.baidu.disconf.client.test.fetcher.FetcherMgrMgrTestCase.pass,./disconf-client,pass,2000,2000,0,0
+https://github.com/knightliao/disconf,2ac5c8275ad8cdc101522ad01a8ba87e53b73b68,com.baidu.disconf.client.test.fetcher.FetcherMgrMgrTestCase.testDownloadFileFromServer,./disconf-client,pass,2000,2000,0,0
+https://github.com/knightliao/disconf,2ac5c8275ad8cdc101522ad01a8ba87e53b73b68,com.baidu.disconf.client.test.store.DisconfStoreMgrTestCase.pass,./disconf-client,pass,2000,2000,0,0
+https://github.com/knightliao/disconf,2ac5c8275ad8cdc101522ad01a8ba87e53b73b68,com.baidu.disconf.client.test.scan.ScanMgrTestCase.pass,./disconf-client,pass,2000,2000,0,0
+https://github.com/knightliao/disconf,2ac5c8275ad8cdc101522ad01a8ba87e53b73b68,com.baidu.disconf.client.test.scan.inner.ScanPackTestCase.pass,./disconf-client,pass,2000,2000,0,0
+https://github.com/knightliao/disconf,2ac5c8275ad8cdc101522ad01a8ba87e53b73b68,com.baidu.disconf.client.test.core.filetype.FileTypeProcessorUtilsTestCase.getKvMapTest,./disconf-client,pass,2000,2000,0,0
+https://github.com/knightliao/disconf,2ac5c8275ad8cdc101522ad01a8ba87e53b73b68,com.baidu.disconf.client.test.scan.ScanMgrTestCase.scan,./disconf-client,pass,2000,2000,0,0
+https://github.com/knightliao/disconf,2ac5c8275ad8cdc101522ad01a8ba87e53b73b68,com.baidu.disconf.client.test.scan.inner.ScanPackTestCase.scan,./disconf-client,pass,2000,2000,0,0
+https://github.com/knightliao/disconf,2ac5c8275ad8cdc101522ad01a8ba87e53b73b68,com.baidu.disconf.client.test.DisconfMgrTestCase.demo,./disconf-client,pass,2000,2000,0,0
+https://github.com/knightliao/disconf,2ac5c8275ad8cdc101522ad01a8ba87e53b73b68,com.baidu.disconf.client.test.DisconfMgrTestCase.pass,./disconf-client,pass,2000,2000,0,0
+https://github.com/knightliao/disconf,2ac5c8275ad8cdc101522ad01a8ba87e53b73b68,com.baidu.disconf.client.test.common.BaseSpringTestCase.pass,./disconf-client,pass,2000,2000,0,0
+https://github.com/knightliao/disconf,2ac5c8275ad8cdc101522ad01a8ba87e53b73b68,com.baidu.disconf.client.test.core.DisconfCoreMgrTestCase.pass,./disconf-client,pass,2000,2000,0,0
+https://github.com/knightliao/disconf,2ac5c8275ad8cdc101522ad01a8ba87e53b73b68,com.baidu.disconf.client.test.common.BaseSpringMockTestCase.pass,./disconf-client,pass,2000,2000,0,0
+https://github.com/knightliao/disconf,2ac5c8275ad8cdc101522ad01a8ba87e53b73b68,com.baidu.disconf.client.test.fetcher.FetcherMgrMgrTestCase.testGetValueFromServer,./disconf-client,pass,2000,2000,0,0

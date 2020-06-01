@@ -1,0 +1,12 @@
+org.zalando.riptide.failsafe.CompoundRetryListenerTest
+org.zalando.riptide.failsafe.FailsafePluginRetriesTest
+org.zalando.riptide.failsafe.RetryAfterDelayFunctionTest
+org.zalando.riptide.failsafe.SecondsDelayParserTest
+org.zalando.riptide.failsafe.FailsafePluginNoCircuitBreakerTest
+org.zalando.riptide.failsafe.HttpDateDelayParserTest
+org.zalando.riptide.failsafe.FailsafePluginCircuitBreakerTest
+org.zalando.riptide.failsafe.CircuitBreakerListenerTest
+org.zalando.riptide.failsafe.CompoundDelayParserTest
+org.zalando.riptide.failsafe.metrics.MetricsRetryListenerTest
+org.zalando.riptide.failsafe.metrics.MetricsCircuitBreakerListenerTest
+org.zalando.riptide.failsafe.LoggingRetryListenerTest

@@ -1,0 +1,7 @@
+org.apache.dubbo.remoting.exchange.support.header.HeartbeatHandlerTest
+org.apache.dubbo.remoting.transport.netty.ClientsTest
+org.apache.dubbo.remoting.transport.netty.NettyStringTest
+org.apache.dubbo.remoting.transport.netty.ClientReconnectTest
+org.apache.dubbo.remoting.transport.netty.ThreadNameTest
+org.apache.dubbo.remoting.transport.netty.NettyClientTest
+org.apache.dubbo.remoting.transport.netty.NettyClientToServerTest

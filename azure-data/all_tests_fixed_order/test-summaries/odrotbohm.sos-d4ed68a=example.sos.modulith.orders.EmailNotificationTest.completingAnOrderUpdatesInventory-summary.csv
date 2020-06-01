@@ -1,0 +1,4 @@
+https://github.com/odrotbohm/sos,d4ed68a143b637c7e2d523edad1b105bf6c2d996,example.sos.modulith.orders.EmailNotificationTest.completingAnOrderUpdatesInventory,./20-modulith,error,2000,0,2000,0
+https://github.com/odrotbohm/sos,d4ed68a143b637c7e2d523edad1b105bf6c2d996,example.sos.modulith.orders.EmailNotificationTest.systemCrashDuringTransactionalListenerExecutionKeepsPublicationRegistration,./20-modulith,error,2000,0,2000,0
+https://github.com/odrotbohm/sos,d4ed68a143b637c7e2d523edad1b105bf6c2d996,example.sos.modulith.orders.OrderManagerIntegrationTests.completingAnOrderUpdatesInventory,./20-modulith,error,2000,0,2000,0
+https://github.com/odrotbohm/sos,d4ed68a143b637c7e2d523edad1b105bf6c2d996,example.sos.modulith.orders.OrderManagerIntegrationTests.throwsExceptionInCaseProductIsOutOfStock,./20-modulith,error,2000,0,2000,0

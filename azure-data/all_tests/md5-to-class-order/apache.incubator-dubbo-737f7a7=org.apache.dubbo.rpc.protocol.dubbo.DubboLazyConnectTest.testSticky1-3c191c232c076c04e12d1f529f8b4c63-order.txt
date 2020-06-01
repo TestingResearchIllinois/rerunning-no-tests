@@ -1,0 +1,15 @@
+org.apache.dubbo.rpc.protocol.dubbo.telnet.ListTelnetHandlerTest
+org.apache.dubbo.rpc.protocol.dubbo.telnet.LogTelnetHandlerTest
+org.apache.dubbo.rpc.protocol.dubbo.telnet.ChangeTelnetHandlerTest
+org.apache.dubbo.rpc.protocol.dubbo.telnet.PortTelnetHandlerTest
+org.apache.dubbo.rpc.protocol.dubbo.telnet.CurrentTelnetHandlerTest
+org.apache.dubbo.rpc.protocol.dubbo.telnet.InvokerTelnetHandlerTest
+org.apache.dubbo.rpc.protocol.dubbo.RpcFilterTest
+org.apache.dubbo.rpc.protocol.dubbo.ReferenceCountExchangeClientTest
+org.apache.dubbo.rpc.protocol.dubbo.ExplicitCallbackTest
+org.apache.dubbo.rpc.protocol.dubbo.DubboLazyConnectTest
+org.apache.dubbo.rpc.protocol.dubbo.DubboInvokerAvilableTest
+org.apache.dubbo.rpc.protocol.dubbo.FutureFilterTest
+org.apache.dubbo.rpc.protocol.dubbo.DubboProtocolTest
+org.apache.dubbo.rpc.protocol.dubbo.ImplicitCallBackTest
+org.apache.dubbo.rpc.protocol.dubbo.MultiThreadTest

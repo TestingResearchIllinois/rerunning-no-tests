@@ -1,0 +1,8 @@
+com.oracle.bmc.objectstorage.transfer.ProgressTrackingInputStreamTest
+com.oracle.bmc.objectstorage.transfer.MultipartObjectAssemblerTest
+com.oracle.bmc.objectstorage.transfer.ProgressTrackerTest
+com.oracle.bmc.objectstorage.transfer.internal.StreamChunkCreatorTest
+com.oracle.bmc.objectstorage.transfer.internal.MultipartUtilsTest
+com.oracle.bmc.objectstorage.transfer.internal.StreamHelperTest
+com.oracle.bmc.objectstorage.transfer.internal.MultipartTransferManagerTest
+com.oracle.bmc.objectstorage.transfer.UploadManagerTest

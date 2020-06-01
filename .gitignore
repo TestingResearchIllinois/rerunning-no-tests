@@ -6,5 +6,6 @@ auto
 *.log
 *.bbl
 *.blg
-azure-data/all_tests/per-test-results
-azure-data/isolation/per-test-results
+**/*-bak*/
+**/per-test-results/
+azure-data/all_tests_fixed_order/all_tests_fixed_order_per-test-results.zip

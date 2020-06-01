@@ -1,0 +1,2 @@
+com.espertech.esper.example.rfidassetzone.TestAssetZoneMoveStmt
+com.espertech.esper.example.rfidassetzone.TestLRMovingSimMain

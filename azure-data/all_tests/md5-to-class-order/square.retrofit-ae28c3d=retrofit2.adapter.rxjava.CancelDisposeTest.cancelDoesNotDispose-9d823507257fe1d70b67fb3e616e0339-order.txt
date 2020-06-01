@@ -1,0 +1,15 @@
+retrofit2.adapter.rxjava.ResultTest
+retrofit2.adapter.rxjava.ObservableThrowingSafeSubscriberTest
+retrofit2.adapter.rxjava.RxJavaCallAdapterFactoryTest
+retrofit2.adapter.rxjava.CompletableTest
+retrofit2.adapter.rxjava.ObservableThrowingTest
+retrofit2.adapter.rxjava.ObservableWithSchedulerTest
+retrofit2.adapter.rxjava.SingleTest
+retrofit2.adapter.rxjava.AsyncTest
+retrofit2.adapter.rxjava.CompletableWithSchedulerTest
+retrofit2.adapter.rxjava.SingleThrowingTest
+retrofit2.adapter.rxjava.CancelDisposeTest
+retrofit2.adapter.rxjava.CompletableThrowingSafeSubscriberTest
+retrofit2.adapter.rxjava.ObservableTest
+retrofit2.adapter.rxjava.CompletableThrowingTest
+retrofit2.adapter.rxjava.SingleWithSchedulerTest

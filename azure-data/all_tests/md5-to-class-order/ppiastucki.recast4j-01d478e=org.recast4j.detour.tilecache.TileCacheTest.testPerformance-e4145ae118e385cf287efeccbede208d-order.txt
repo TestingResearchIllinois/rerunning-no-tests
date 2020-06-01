@@ -1,0 +1,6 @@
+org.recast4j.detour.tilecache.TileCacheFindPathTest
+org.recast4j.detour.tilecache.TempObstaclesTest
+org.recast4j.detour.tilecache.TileCacheTest
+org.recast4j.detour.tilecache.io.TileCacheReaderWriterTest
+org.recast4j.detour.tilecache.io.TileCacheReaderTest
+org.recast4j.detour.tilecache.TileCacheNavigationTest

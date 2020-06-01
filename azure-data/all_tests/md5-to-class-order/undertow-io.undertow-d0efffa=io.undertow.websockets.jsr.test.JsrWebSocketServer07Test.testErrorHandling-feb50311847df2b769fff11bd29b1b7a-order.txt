@@ -1,0 +1,14 @@
+io.undertow.websockets.jsr.test.suspendresume.SuspendResumeTestCase
+io.undertow.websockets.jsr.test.stress.WebsocketStressTestCase
+io.undertow.websockets.jsr.test.security.WebsocketBasicAuthTestCase
+io.undertow.websockets.jsr.test.reconnect.ClientEndpointReconnectTestCase
+io.undertow.websockets.jsr.test.extension.JsrWebsocketExtensionTestCase
+io.undertow.websockets.jsr.test.dynamicupgrade.DynamicEndpointTest
+io.undertow.websockets.jsr.test.annotated.AnnotatedEndpointTest
+io.undertow.websockets.jsr.test.TestMessagesReceivedInOrder
+io.undertow.websockets.jsr.test.ProgramaticLazyEndpointTest
+io.undertow.websockets.jsr.test.JsrWebSocketServer13Test
+io.undertow.websockets.jsr.test.JsrWebSocketServer08Test
+io.undertow.websockets.jsr.test.JsrWebSocketServer07Test
+io.undertow.websockets.jsr.test.ClassUtilsTest
+io.undertow.websockets.jsr.test.BinaryEndpointTest
