@@ -21,7 +21,7 @@ for (f in azureDetailFiles){
 allAzureDetailData <- bind_rows(azureDetailData) %>% mutate(slug=str_replace(slug,"https://github.com/([^/]+)/([^/]+)","\\1.\\2"))
 
 # only flakies
-allAzureDetailDataFlakies <- group_by(test_name) %>% filter(any(result=="pass") & (any(result="error") | any(result="failure")))
+allAzureFlakies <- allAzureDetailData %>% group_by(test_name) %>% filter(any(test_result=="pass") & (any(test_result=="error") | any(test_result=="failure")))
 
 # average number of consecutive test failures for each order
 # allAzureDetailData %>% filter(sum()) %>% group_by(machine_id,slug,module_path) %>%
