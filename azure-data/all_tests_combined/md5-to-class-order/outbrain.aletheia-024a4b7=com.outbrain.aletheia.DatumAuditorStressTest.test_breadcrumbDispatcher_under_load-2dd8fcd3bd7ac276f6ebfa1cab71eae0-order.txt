@@ -1,0 +1,7 @@
+com.outbrain.aletheia.configuration.InMemoryEndPointTemplateTest
+com.outbrain.aletheia.configuration.AletheiaConfigTest
+com.outbrain.aletheia.configuration.PropertyUtilsTest
+com.outbrain.aletheia.configuration.RestConfigReaderTest
+com.outbrain.aletheia.breadcrumbs.BreadcrumbDispatcherTest
+com.outbrain.aletheia.SampleDomainClassDatumTest
+com.outbrain.aletheia.DatumAuditorStressTest

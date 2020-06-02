@@ -1,0 +1,14 @@
+https://github.com/fromage/redpipe,0aff891d6befdf0dcc2bdbfda22262cdf82ac66f,net.redpipe.templating.freemarker.ApiTest.checkTemplateWithTemplateExtension,./redpipe-templating-freemarker,pass,4000,4000,0,0
+https://github.com/fromage/redpipe,0aff891d6befdf0dcc2bdbfda22262cdf82ac66f,net.redpipe.templating.freemarker.ApiTest.checkTemplateWithHtmlExtension,./redpipe-templating-freemarker,pass,4000,4000,0,0
+https://github.com/fromage/redpipe,0aff891d6befdf0dcc2bdbfda22262cdf82ac66f,net.redpipe.templating.freemarker.ApiTest.checkTemplateNegociationText,./redpipe-templating-freemarker,pass,4000,4000,0,0
+https://github.com/fromage/redpipe,0aff891d6befdf0dcc2bdbfda22262cdf82ac66f,net.redpipe.templating.freemarker.ApiTest.checkTemplateWithHtmlAndTemplateExtension,./redpipe-templating-freemarker,pass,4000,4000,0,0
+https://github.com/fromage/redpipe,0aff891d6befdf0dcc2bdbfda22262cdf82ac66f,net.redpipe.templating.freemarker.ApiTest.checkTemplateDefaultName,./redpipe-templating-freemarker,pass,4000,4000,0,0
+https://github.com/fromage/redpipe,0aff891d6befdf0dcc2bdbfda22262cdf82ac66f,net.redpipe.templating.freemarker.ApiTest.checkTemplateNegociationHtml,./redpipe-templating-freemarker,pass,4000,4000,0,0
+https://github.com/fromage/redpipe,0aff891d6befdf0dcc2bdbfda22262cdf82ac66f,net.redpipe.templating.freemarker.ApiTest.checkTemplateNegociationHtml2,./redpipe-templating-freemarker,pass,4000,4000,0,0
+https://github.com/fromage/redpipe,0aff891d6befdf0dcc2bdbfda22262cdf82ac66f,net.redpipe.templating.freemarker.ApiTest.checkTemplateNegociationSingleHtml,./redpipe-templating-freemarker,pass,4000,4000,0,0
+https://github.com/fromage/redpipe,0aff891d6befdf0dcc2bdbfda22262cdf82ac66f,net.redpipe.templating.freemarker.ApiTest.checkMail2,./redpipe-templating-freemarker,pass,4000,4000,0,0
+https://github.com/fromage/redpipe,0aff891d6befdf0dcc2bdbfda22262cdf82ac66f,net.redpipe.templating.freemarker.ApiTest.checkTemplateNegociationText2,./redpipe-templating-freemarker,pass,4000,4000,0,0
+https://github.com/fromage/redpipe,0aff891d6befdf0dcc2bdbfda22262cdf82ac66f,net.redpipe.templating.freemarker.ApiTest.checkMail,./redpipe-templating-freemarker,pass,4000,4000,0,0
+https://github.com/fromage/redpipe,0aff891d6befdf0dcc2bdbfda22262cdf82ac66f,net.redpipe.templating.freemarker.ApiTest.checkTemplate,./redpipe-templating-freemarker,pass,4000,4000,0,0
+https://github.com/fromage/redpipe,0aff891d6befdf0dcc2bdbfda22262cdf82ac66f,net.redpipe.templating.freemarker.ApiTest.checkTemplateNegociationDefault,./redpipe-templating-freemarker,pass,4000,4000,0,0
+https://github.com/fromage/redpipe,0aff891d6befdf0dcc2bdbfda22262cdf82ac66f,net.redpipe.templating.freemarker.ApiTest.checkTemplateNegociationNotAcceptable,./redpipe-templating-freemarker,pass,4000,4000,0,0

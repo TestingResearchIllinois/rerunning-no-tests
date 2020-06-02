@@ -1,0 +1,10 @@
+https://github.com/c2mon/c2mon,d80687b119c713dd177a58cf53a997d8cc5ca264,cern.c2mon.server.common.republisher.RepublisherImplTest.testNonJmsException,./c2mon-server/c2mon-server-common,pass,4000,4000,0,0
+https://github.com/c2mon/c2mon,d80687b119c713dd177a58cf53a997d8cc5ca264,cern.c2mon.server.common.republisher.RepublisherImplTest.testFailToPublish,./c2mon-server/c2mon-server-common,pass,4000,4000,0,0
+https://github.com/c2mon/c2mon,d80687b119c713dd177a58cf53a997d8cc5ca264,cern.c2mon.server.common.republisher.RepublisherImplTest.testSingleRepublication,./c2mon-server/c2mon-server-common,pass,4000,4000,0,0
+https://github.com/c2mon/c2mon,d80687b119c713dd177a58cf53a997d8cc5ca264,cern.c2mon.server.common.alarm.ValueAlarmConditionTest.testEnumHandling,./c2mon-server/c2mon-server-common,pass,4000,4000,0,0
+https://github.com/c2mon/c2mon,d80687b119c713dd177a58cf53a997d8cc5ca264,cern.c2mon.server.common.republisher.RepublisherImplTest.testSuccessiveRepublication,./c2mon-server/c2mon-server-common,pass,4000,4000,0,0
+https://github.com/c2mon/c2mon,d80687b119c713dd177a58cf53a997d8cc5ca264,cern.c2mon.server.common.republisher.RepublisherImplTest.testMultipleExceptions,./c2mon-server/c2mon-server-common,flaky,4000,3984,0,16
+https://github.com/c2mon/c2mon,d80687b119c713dd177a58cf53a997d8cc5ca264,cern.c2mon.server.common.republisher.RepublisherImplTest.testMultiplePublicationsWithExceptions,./c2mon-server/c2mon-server-common,flaky,4000,3953,0,47
+https://github.com/c2mon/c2mon,d80687b119c713dd177a58cf53a997d8cc5ca264,cern.c2mon.server.common.republisher.RepublisherImplTest.testMultipleRepublication,./c2mon-server/c2mon-server-common,pass,4000,4000,0,0
+https://github.com/c2mon/c2mon,d80687b119c713dd177a58cf53a997d8cc5ca264,cern.c2mon.server.common.republisher.RepublisherImplTest.testSingleRepublicationAfterException,./c2mon-server/c2mon-server-common,pass,4000,4000,0,0
+https://github.com/c2mon/c2mon,d80687b119c713dd177a58cf53a997d8cc5ca264,cern.c2mon.server.common.republisher.RepublisherImplTest.testNotStartedException,./c2mon-server/c2mon-server-common,pass,4000,4000,0,0
