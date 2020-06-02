@@ -1,3 +1,0 @@
-test_name,summarized_test_result,num_runs,num_pass,num_error,num_fail
-com.espertech.esper.example.rfidassetzone.TestAssetZoneMoveStmt.testStmt,pass,1800,1800,0,0
-com.espertech.esper.example.rfidassetzone.TestLRMovingSimMain.testSim,flaky,1800,1744,56,0
