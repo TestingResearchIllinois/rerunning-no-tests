@@ -9,8 +9,7 @@ getCrossTSRStats <- function(inputData,groupingCriteria){
 	       mutate(maxConsecFail=ifelse(length(rounds)>1,
 						  max(lengths(split(unlist(rounds),cumsum(c(TRUE,diff(unlist(rounds)) > 1))))),
 	 				   	  1)) %>%
-	       mutate(avgFailDist=ifelse(sum(sapply(rounds,length))>1,mean(diff(unlist(rounds))),NA)) %>%
-	       mutate(medFailDist=ifelse(length(rounds)>1,median(diff(unlist(rounds))),NA))
+	       mutate(failDist=list(diff(unlist(rounds))))
 	       ) # return
 }
 
@@ -20,6 +19,16 @@ createCDFPlot <- function(inputData,variable,xlab,ylab){
   	       theme_bw() + 
   	       theme(text = element_text(size=14)) +
   	       scale_y_continuous(limits=c(0,1), labels=percent) +
+  	       labs(y=ylab, x=xlab)
+	       ) #return
+}
+
+createScatterPlot <- function(inputData,x.in,y.in,xlab,ylab){
+	return(ggplot(inputData, aes(x=eval(as.name(x.in)),y=eval(as.name(y.in)))) + 
+  	       geom_point(na.rm=T) + 
+  	       theme_bw() + 
+  	       theme(text = element_text(size=14)) +
+  	       #scale_y_continuous(limits=c(0,1), labels=percent) +
   	       labs(y=ylab, x=xlab)
 	       ) #return
 }
@@ -39,3 +48,15 @@ allAzureFlakiesPerOrder <- getCrossTSRStats(allAzureFlakies,c("test_class_order_
 consecutiveFlakesECDF <- createCDFPlot(allAzureFlakiesPerOrder,"maxConsecFail","Number of Consecutive Test Failures","Cumulative Fraction of Flaky Tests Identified across 100 Repetitions")
 ggsave(plot=consecutiveFlakesECDF,"orderFlakeClustersAcrossRepetitions.svg",width=5.5,scale=1.1)
 
+
+allAzureFlakiesResults <- allAzureFlakies %>% rowwise() %>% mutate(test_result=recode(test_result,"pass"=0,"error"=1,"failure"=1))
+
+allAzureFlakiesResults %>% group_by(test_result) %>% do(model = glm(test_result ~ run_
+num+
++ test_class_order_md5sum+
++ machine_id+
++ num_test_class+
++ slug+
++ module_path,
++ data=.,
++ family=binomial(logit)))
