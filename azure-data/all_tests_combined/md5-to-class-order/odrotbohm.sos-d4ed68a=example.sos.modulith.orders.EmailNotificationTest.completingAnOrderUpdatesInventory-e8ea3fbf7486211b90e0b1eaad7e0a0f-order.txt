@@ -1,0 +1,2 @@
+example.sos.modulith.orders.OrderManagerIntegrationTests
+example.sos.modulith.orders.EmailNotificationTest

@@ -1,0 +1,2 @@
+cern.c2mon.server.common.republisher.RepublisherImplTest
+cern.c2mon.server.common.alarm.ValueAlarmConditionTest

@@ -1,0 +1,13 @@
+https://github.com/querydsl/querydsl,2bf234caf78549813a1e0f44d9c30ecc5ef734e3,com.querydsl.hibernate.search.SearchQueryTest.exists,./querydsl-hibernate-search,pass,4000,4000,0,0
+https://github.com/querydsl/querydsl,2bf234caf78549813a1e0f44d9c30ecc5ef734e3,com.querydsl.hibernate.search.SearchQueryTest.notExists,./querydsl-hibernate-search,pass,4000,4000,0,0
+https://github.com/querydsl/querydsl,2bf234caf78549813a1e0f44d9c30ecc5ef734e3,com.querydsl.hibernate.search.SearchQueryTest.uniqueResult,./querydsl-hibernate-search,pass,4000,4000,0,0
+https://github.com/querydsl/querydsl,2bf234caf78549813a1e0f44d9c30ecc5ef734e3,com.querydsl.hibernate.search.SearchQueryTest.count,./querydsl-hibernate-search,failure,4000,0,0,4000
+https://github.com/querydsl/querydsl,2bf234caf78549813a1e0f44d9c30ecc5ef734e3,com.querydsl.hibernate.search.SearchQueryTest.singleResult,./querydsl-hibernate-search,pass,4000,4000,0,0
+https://github.com/querydsl/querydsl,2bf234caf78549813a1e0f44d9c30ecc5ef734e3,com.querydsl.hibernate.search.SearchQueryTest.ordering,./querydsl-hibernate-search,pass,4000,4000,0,0
+https://github.com/querydsl/querydsl,2bf234caf78549813a1e0f44d9c30ecc5ef734e3,com.querydsl.hibernate.search.SearchSerializerTest.toField,./querydsl-hibernate-search,pass,4000,4000,0,0
+https://github.com/querydsl/querydsl,2bf234caf78549813a1e0f44d9c30ecc5ef734e3,com.querydsl.hibernate.search.SearchQueryTest.list,./querydsl-hibernate-search,pass,4000,4000,0,0
+https://github.com/querydsl/querydsl,2bf234caf78549813a1e0f44d9c30ecc5ef734e3,com.querydsl.hibernate.search.SearchQueryTest.limit_max_value,./querydsl-hibernate-search,pass,4000,4000,0,0
+https://github.com/querydsl/querydsl,2bf234caf78549813a1e0f44d9c30ecc5ef734e3,com.querydsl.hibernate.search.SearchQueryTest.paging,./querydsl-hibernate-search,failure,4000,0,0,4000
+https://github.com/querydsl/querydsl,2bf234caf78549813a1e0f44d9c30ecc5ef734e3,com.querydsl.hibernate.search.SearchQueryTest.listResults,./querydsl-hibernate-search,failure,4000,0,0,4000
+https://github.com/querydsl/querydsl,2bf234caf78549813a1e0f44d9c30ecc5ef734e3,com.querydsl.hibernate.search.SearchQueryTest.unique_result_throws_exception_on_multiple_results,./querydsl-hibernate-search,pass,4000,4000,0,0
+https://github.com/querydsl/querydsl,2bf234caf78549813a1e0f44d9c30ecc5ef734e3,com.querydsl.hibernate.search.SearchQueryTest.no_where,./querydsl-hibernate-search,pass,4000,4000,0,0

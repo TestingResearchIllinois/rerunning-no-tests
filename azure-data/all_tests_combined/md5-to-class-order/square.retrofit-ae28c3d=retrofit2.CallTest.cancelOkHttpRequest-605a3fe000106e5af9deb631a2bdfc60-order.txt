@@ -1,0 +1,10 @@
+retrofit2.CallAdapterTest
+retrofit2.RequestFactoryAndroidTest
+retrofit2.ExecutorCallAdapterFactoryTest
+retrofit2.RequestFactoryTest
+retrofit2.KotlinUnitTest
+retrofit2.HttpExceptionTest
+retrofit2.CallTest
+retrofit2.RequestFactoryBuilderTest
+retrofit2.RetrofitTest
+retrofit2.ResponseTest

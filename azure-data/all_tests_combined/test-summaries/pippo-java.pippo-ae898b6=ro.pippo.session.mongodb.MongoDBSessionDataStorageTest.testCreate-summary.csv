@@ -1,0 +1,4 @@
+https://github.com/pippo-java/pippo,ae898b6c478af7365b04c2f5bf9331abf496b166,ro.pippo.session.mongodb.MongoDBSessionDataStorageTest.testCreate,./pippo-session-parent/pippo-session-mongodb,pass,4000,4000,0,0
+https://github.com/pippo-java/pippo,ae898b6c478af7365b04c2f5bf9331abf496b166,ro.pippo.session.mongodb.MongoDBSessionDataStorageTest.testSave,./pippo-session-parent/pippo-session-mongodb,pass,4000,4000,0,0
+https://github.com/pippo-java/pippo,ae898b6c478af7365b04c2f5bf9331abf496b166,ro.pippo.session.mongodb.MongoDBSessionDataStorageTest.testGet,./pippo-session-parent/pippo-session-mongodb,pass,4000,4000,0,0
+https://github.com/pippo-java/pippo,ae898b6c478af7365b04c2f5bf9331abf496b166,ro.pippo.session.mongodb.MongoDBSessionDataStorageTest.testDelete,./pippo-session-parent/pippo-session-mongodb,pass,4000,4000,0,0

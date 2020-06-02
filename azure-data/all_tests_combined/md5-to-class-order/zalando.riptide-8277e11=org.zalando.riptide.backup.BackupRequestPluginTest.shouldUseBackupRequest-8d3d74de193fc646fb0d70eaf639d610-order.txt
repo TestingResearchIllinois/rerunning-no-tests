@@ -1,0 +1,2 @@
+org.zalando.riptide.backup.EnforceCoverageTest
+org.zalando.riptide.backup.BackupRequestPluginTest

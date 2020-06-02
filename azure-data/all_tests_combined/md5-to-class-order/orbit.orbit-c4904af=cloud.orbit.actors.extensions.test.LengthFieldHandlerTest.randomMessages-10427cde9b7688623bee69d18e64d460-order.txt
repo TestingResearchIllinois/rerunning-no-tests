@@ -1,0 +1,8 @@
+cloud.orbit.actors.ExecutionSerializerTest
+cloud.orbit.actors.runtime.ChannelTest
+cloud.orbit.actors.runtime.FastActorClassFinderTest
+cloud.orbit.actors.runtime.KryoOutputPoolTest
+cloud.orbit.actors.runtime.KryoInputPoolTest
+cloud.orbit.actors.extensions.test.LengthFieldHandlerTest
+cloud.orbit.actors.extensions.test.ConstructionTest
+cloud.orbit.actors.cloner.CloneHelperTest
