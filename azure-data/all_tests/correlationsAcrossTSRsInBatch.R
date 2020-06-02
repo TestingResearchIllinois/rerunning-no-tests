@@ -1,6 +1,7 @@
 library(tidyverse)
 library(stringr)
 library(purrr)
+library(scales)
 
 # load data
 
@@ -21,16 +22,26 @@ for (f in azureDetailFiles){
 allAzureDetailData <- bind_rows(azureDetailData) %>% mutate(slug=str_replace(slug,"https://github.com/([^/]+)/([^/]+)","\\1.\\2"))
 
 # only flakies
-allAzureFlakies <- allAzureDetailData %>% group_by(test_name) %>% filter(any(test_result=="pass") & (any(test_result=="error") | any(test_result=="failure")))
+allAzureFlakies <- allAzureDetailData %>% group_by(test_name) %>% filter(any(test_result=="pass") & (any(test_result=="error") | any(test_result=="failure"))) %>% ungroup()
 
 # average number of consecutive test failures for each order
-allAzureFlakies %>%
+allAzureFlakies <- allAzureFlakies %>%
 	filter(test_result=="error" | test_result=="failure") %>%
 	group_by(machine_id,slug,module_path,test_name) %>%
 	arrange(run_num) %>%
 	summarize(rounds=paste0(run_num,collapse=" ")) %>%
 	mutate(rounds=lapply(str_split(rounds," "),as.integer)) %>%
 	mutate(rounds=max(lengths(split(unlist(rounds),cumsum(c(TRUE,diff(unlist(rounds)) != 1))))))
+
+consecutiveFlakesECDF <- ggplot(allAzureFlakies, aes(rounds)) + 
+  stat_ecdf(geom = "step",size=1.2) + 
+  theme_bw() + 
+  theme(text = element_text(size=14)) +
+  scale_y_continuous(limits=c(0,1), labels=percent) +
+  labs(y="Cumulative Fraction of Flaky Tests Identified across 100 Repetitions", x="Number of Consecutive Test Failures") +
+#  scale_color_discrete(name="Flaky Test Category",breaks=c("ID","OD-brittle","OD-victim"),labels=c("ID","OD Brittle","OD Victim")) +
+#  scale_linetype_discrete(name="Flaky Test Category",breaks=c("ID","OD-brittle","OD-victim"),labels=c("ID","OD Brittle","OD Victim"))
+ggsave("flakeClustersAcrossRepetitions.svg",width=5.5,scale=1.1)
 
 # average number of consecutive test failures for each order and module
 
