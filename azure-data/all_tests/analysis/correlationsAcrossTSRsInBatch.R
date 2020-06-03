@@ -51,12 +51,14 @@ ggsave(plot=consecutiveFlakesECDF,"orderFlakeClustersAcrossRepetitions.svg",widt
 
 allAzureFlakiesResults <- allAzureFlakies %>% rowwise() %>% mutate(test_result=recode(test_result,"pass"=0,"error"=1,"failure"=1))
 
-allAzureFlakiesResults %>% group_by(test_result) %>% do(model = glm(test_result ~ run_
-num+
-+ test_class_order_md5sum+
-+ machine_id+
-+ num_test_class+
-+ slug+
-+ module_path,
-+ data=.,
-+ family=binomial(logit)))
+allAzureFlakiesResults <- allAzureFlakiesResults %>% group_by(machine_id,slug,module_path,test_class_order_md5sum,test_result) %>% summarize(logit.p=coef(summary(glm(test_result ~ run_num,data=.,family=binomial(logit))))[2,4])
+
+# %>% do(model = glm(test_result ~ run_
+# num+
+# + test_class_order_md5sum+
+# + machine_id+
+# + num_test_class+
+# + slug+
+# + module_path,
+# + data=.,
+# + family=binomial(logit)))
