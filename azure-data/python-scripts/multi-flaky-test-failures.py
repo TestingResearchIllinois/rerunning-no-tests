@@ -72,9 +72,8 @@ def summarize_test_results(roundpath):
 
     for (run_order,machine_id,run_num) in test_order_results.keys():
         test_list = test_order_results[(run_order,machine_id,run_num)]
-        if len(test_list) > 1:
-            test_list.sort()
-            print str.format("{},{},{},{},{}", module_info[(slug,mod)][0], machine_id, run_order, run_num, ';'.join(test_list))
+        test_list.sort()
+        print str.format("{},{},{},{},{}", module_info[(slug,mod)][0], machine_id, run_order, run_num, ';'.join(test_list))
 
 if __name__ == '__main__':
     summarize_test_results(sys.argv)
