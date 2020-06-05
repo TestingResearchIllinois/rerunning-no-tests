@@ -20,7 +20,7 @@ def add_to_dict(dicta, v, val):
         result.append(val)
     dicta[v] = result
 
-def read_per_test_result_file(filepath, ftest, dicta):
+def read_per_test_result_file(filepath, ftest, dicta, module_dict, module_info):
     with open(filepath) as fp:
         for cnt, line in enumerate(fp):
             if line.strip() == "":
@@ -31,6 +31,7 @@ def read_per_test_result_file(filepath, ftest, dicta):
                 continue
             if result == "failure" or result == "error":
                 add_to_dict(dicta, (run_order,machine_id,run_num), test)
+                module_dict[(run_order,machine_id,run_num)] = module_info
 
 def read_summary_file(filepath):
 #apache.incubator-dubbo-737f7a7=org.apache.dubbo.rpc.protocol.dubbo.DubboLazyConnectTest.testSticky1-summary.csv:https://github.com/apache/incubator-dubbo,737f7a7ea67832d7f17517326fb2491d0a086dd7,org.apache.dubbo.rpc.protocol.dubbo.telnet.ListTelnetHandlerTest.testListService,./dubbo-rpc/dubbo-rpc-dubbo,flaky,4000,3991,9,0
@@ -61,19 +62,20 @@ def summarize_test_results(roundpath):
     module_info = read_module_file(roundpath[3])
     print "module_id,batch_id,order_id,tsrnum(1-100),set_of_test_that_fail"
     test_order_results = {}
+    order_to_module = {}
     for test in test_info.keys():
         (file_name, slug, sha, mod) = test_info[test]
         results_file = str.format("{}-results.csv", file_name[:file_name.rfind('-')])
         results_file_path = os.path.join(per_test_result_path, results_file)
         if os.path.isfile(results_file_path):
-            read_per_test_result_file(results_file_path, test, test_order_results)
+            read_per_test_result_file(results_file_path, test, test_order_results,order_to_module,  module_info[(slug,mod)][0])
         else:
             raise ValueError(str.format("Cannot find results file: {}", results_file_path))
 
     for (run_order,machine_id,run_num) in test_order_results.keys():
         test_list = test_order_results[(run_order,machine_id,run_num)]
         test_list.sort()
-        print str.format("{},{},{},{},{}", module_info[(slug,mod)][0], machine_id, run_order, run_num, ';'.join(test_list))
+        print str.format("{},{},{},{},{}", order_to_module[(run_order,machine_id,run_num)], machine_id, run_order, run_num, ';'.join(test_list))
 
 if __name__ == '__main__':
     summarize_test_results(sys.argv)
