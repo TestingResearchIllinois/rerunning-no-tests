@@ -23,3 +23,4 @@ https://github.com/square/retrofit,./retrofit,\Use{square/retrofit=./retrofit_na
 https://github.com/TooTallNate/Java-WebSocket,.,\Use{TooTallNate/Java-WebSocket=._name},M23
 https://github.com/wro4j/wro4j,./wro4j-extensions,\Use{wro4j/wro4j=./wro4j-extensions_name},M24
 https://github.com/wso2/carbon-apimgt,./analyzer-modules/org.wso2.carbon.apimgt.throttling.siddhi.extension,\Use{wso2/carbon-apimgt=./analyzer-modules/org.wso2.carbon.apimgt.throttling.siddhi.extension_name},M25
+https://github.com/zalando/riptide,./riptide-failsafe,\Use{zalando/riptide=./riptide-failsafe_name},M26

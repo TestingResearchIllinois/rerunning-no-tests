@@ -19,6 +19,7 @@ https://github.com/fromage/redpipe,0aff891d6befdf0dcc2bdbfda22262cdf82ac66f,net.
 https://github.com/fromage/redpipe,0aff891d6befdf0dcc2bdbfda22262cdf82ac66f,net.redpipe.templating.freemarker.ApiTest.checkMail,./redpipe-templating-freemarker,14
 https://github.com/javadelight/delight-nashorn-sandbox,da35edc0a75424bad8cbf60959fae253202154c4,delight.nashornsandbox.TestGetFunction.test,.,79
 https://github.com/kagkarlsson/db-scheduler,4a8a28e60640dcd03e8d3bf212f483d35b0b6310,com.github.kagkarlsson.scheduler.SchedulerTest.scheduler_should_execute_rescheduled_task_when_exactly_due,.,51
+https://github.com/knightliao/disconf,2ac5c8275ad8cdc101522ad01a8ba87e53b73b68,com.baidu.disconf.client.test.DisconfMgrTestCase.demo,./disconf-client,16
 https://github.com/lcw2004/one,7b9b249ab1c09f39be885f95a27a756288be4548,com.lcw.one.main.EmailServiceTest.sendEmailList,./one-notify,2
 https://github.com/looly/hutool,91565d052d2771dd26547e79c619ee8c31497e8f,cn.hutool.cron.test.CronTest.matchAllTest,./hutool-cron,7
 https://github.com/nationalsecurityagency/timely,3a8cbd3378cffdc96aad1c52e9b0b2e1481ca45f,timely.store.iterators.TimeSeriesGroupingIteratorTest.testMultipleTimeSeriesMovingAverage,./server,144
@@ -40,3 +41,4 @@ https://github.com/vmware/admiral,e4b02936cc7d4ff2714e7231db0c4373ba5d48a2,com.v
 https://github.com/wro4j/wro4j,185ab607f1d649ca38b4a772831ee754cd4649fb,ro.isdc.wro.extensions.processor.TestBourbonCssProcessor.shouldBeThreadSafe,./wro4j-extensions,308
 https://github.com/wso2/carbon-apimgt,a82213e40e7e6aa529341fdd1d1c3de776949e64,org.wso2.carbon.apimgt.throttling.siddhi.extension.ThrottleTimeBatchWindowTestCase.throttleTimeWindowBatchTest1,./analyzer-modules/org.wso2.carbon.apimgt.throttling.siddhi.extension,2
 https://github.com/zalando/riptide,8277e11fc069d8e24df0d233ef2577cc75659b75,org.zalando.riptide.backup.BackupRequestPluginTest.shouldUseBackupRequest,./riptide-backup,10
+https://github.com/zalando/riptide,8277e11fc069d8e24df0d233ef2577cc75659b75,org.zalando.riptide.failsafe.RetryAfterDelayFunctionTest.shouldRetryOnDemandWithDynamicDelay,./riptide-failsafe,33
