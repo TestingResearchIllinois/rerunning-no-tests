@@ -9,3 +9,4 @@ auto
 **/*-bak*/
 **/per-test-results/
 azure-data/all_tests_fixed_order/all_tests_fixed_order_per-test-results.zip
+python-scripts/method-orders/*
