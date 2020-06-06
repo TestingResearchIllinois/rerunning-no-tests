@@ -1,0 +1,15 @@
+#script to produce figure fig:rq2:AverageFlakeRatePerTest
+
+tests=read.table(file="~/Downloads/flaky-rate-per-test-order-simplified.txt",sep=',',header=TRUE)
+X=split(tests,tests$Test_name)
+
+#average flake rate for 107 tests
+# mean for each test:
+mean.rate.per.softwareTest=rep(0,length(X))
+for (i in 1:length(X)){
+  mean.rate.per.softwareTest[i]=mean(X[[i]]$Order_Flake_rate)
+}
+barplot(sort(mean.rate.per.softwareTest,decreasing=TRUE),main=("Average Flake Rate over Orderings per Test (n=107)"),ylab="Average Flake Rate",xlab="Test")
+
+#mean(mean.rate.per.softwareTest)
+##[1] 0.03104279
