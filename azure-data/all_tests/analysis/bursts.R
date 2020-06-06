@@ -62,9 +62,7 @@ createScatterPlot <- function(inputData,x.in,y.in,xlab,ylab){
 # RQ1 - Max Bursts
 
 allAzureFlakiesBurstsPerTest <- getCrossTSRStats(allAzureFlakies,c("test_name","machine_id","slug","module_path","test_class_order_md5sum"))
-
-
-
+allAzureFlakiesBurstsPerOrder <- allAzureFlakiesBurstsPerTest %>% group_by(test_name,test_class_order_md5sum) %>% summarize(maxConsecFail=max(maxConsecFail))
 allAzureFlakiesBurstsPerTest <- allAzureFlakiesBurstsPerTest %>% group_by(test_name) %>% summarize(maxConsecFail=max(maxConsecFail))
 
 TSOMaxBurstsECDF <- ggplot(allAzureFlakiesBurstsPerTest, aes(x=maxConsecFail)) + 
@@ -100,14 +98,23 @@ ecdf((combinedMaxBurstsTransformed %>% filter(howRun=="TSO"))$maxBurst)(6)
 ecdf((combinedMaxBurstsTransformed %>% filter(howRun=="TSO"))$maxBurst)(10)
 
 combinedMaxBurstsInner <- inner_join(allAzureFlakiesBurstsPerTest %>% select(test_name,TSO=maxConsecFail),allAzureFlakiesBurstsPerTestISO %>% select(test_name,ISO=maxConsecFail))
-combinedMaxBurstsTransformedInner <- gather(combinedMaxBursts,howRun,maxBurst,2:3)
+combinedMaxBurstsTransformedInner <- gather(combinedMaxBurstsInner,howRun,maxBurst,2:3)
 
 combinedMaxBurstsECDFInner <- ggplot(combinedMaxBurstsTransformedInner, aes(x=maxBurst,group=howRun,linetype=howRun,color=howRun)) + 
   	       stat_ecdf(geom = "step",size=1.2) + 
   	       theme_bw() + 
   	       theme(text = element_text(size=20),legend.position = "top",legend.key.width=unit(1,"cm")) +
   	       scale_y_continuous(limits=c(0,1), labels=percent) +
+	       scale_x_continuous(breaks=c(0,5,10,seq(20,100,20)),minor_breaks=c(seq(30,90,20))) +	       
   	       labs(y="Cumulative Fraction Across Tests", x="Test Failure Burst Length") +
 	       scale_color_discrete(name="",breaks=c("ISO","TSO"),labels=c("ISO","TSO")) +
   	       scale_linetype_discrete(name="",breaks=c("ISO","TSO"),labels=c("ISO","TSO"))
 ggsave(plot=combinedMaxBurstsECDFInner,file="burstsByTestInner.svg")
+
+# RQ4 -- Hypothesis tests
+
+TSOFailRates <- allAzureFlakies %>% group_by(test_name) %>% summarize(failRateTSO=(1-sum(test_result=="pass")/n()))
+ISOFailRates <- allAzureFlakiesISO %>% group_by(test_name) %>% summarize(failRateISO=(1-sum(test_result=="pass")/n()))
+combinedFailRates <- full_join(TSOFailRates,ISOFailRates,by="test_name") %>% replace_na(list(failRateTSO=0,failRateISO=0))
+wilcox.test(combinedFailRates$failRateTSO,combinedFailRates$failRateISO,paired=T,alternative="two.sided")
+ks.test(combinedFailRates$failRateTSO,combinedFailRates$failRateISO,alternative="two.sided")
