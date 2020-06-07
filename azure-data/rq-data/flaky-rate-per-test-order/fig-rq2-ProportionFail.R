@@ -3,17 +3,22 @@
 tests=read.table(file="~/Downloads/flaky-rate-per-test-order-simplified.txt",sep=',',header=TRUE)
 X=split(tests,tests$Test_name)
 
-# obtaining the proportion of total orders per test with at least one failure
-# eliminating tests with one ordering
+#removing tests with one or two orderings
+Ordering.Count.Per.Test=sapply(X, dim)[1,]
+#get tests with one or two orderings only:
+which(as.numeric(Ordering.Count.Per.Test)==1)
+# [1] 14 27 28 29 34 85
+which(as.numeric(Ordering.Count.Per.Test)==2)
+#[1] 2 3 5
+X=X[-c(2,3,5,14,27,28,29,34,85)]
+#n=98
+
+# obtaining the proportion of total orders per test
 
 FailOrderingCount.per.softwareTest=rep(0,length(X))
 for (i in 1:length(X)){
-  if(dim(X[[i]])[1]==1){
-    FailOrderingCount.per.softwareTest[i]=NA
-  }
-  else {
     FailOrderingCount.per.softwareTest[i]=sum(X[[i]]$Order_Flake_rate!=0)/length(X[[i]]$Order_Flake_rate)
-  }
 }
 
-boxplot(FailOrderingCount.per.softwareTest,main=("Proportion of Orderings with >1 Failure, by Test (n=101)"), ylab=("Proportion"))
+boxplot(FailOrderingCount.per.softwareTest, xlab=("Proportion of Orderings with >1 Failure per Test"),ylim=c(0,1),horizontal=TRUE,cex.lab=1.5,cex.axis=1.5,xaxt="n")
+axis(1, at=c(0,.1,.2,.3,.4,.5,.6,.7,.8,.9,1), labels=paste0(c(0,.1,.2,.3,.4,.5,.6,.7,.8,.9,1)*100, "%"),cex.lab=1.5,cex.axis=1.1)
