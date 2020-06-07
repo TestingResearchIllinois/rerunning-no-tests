@@ -9,7 +9,4 @@ mean.rate.per.softwareTest=rep(0,length(X))
 for (i in 1:length(X)){
   mean.rate.per.softwareTest[i]=mean(X[[i]]$Order_Flake_rate)
 }
-barplot(sort(mean.rate.per.softwareTest,decreasing=TRUE),main=("Average Flake Rate over Orderings per Test (n=107)"),ylab="Average Flake Rate",xlab="Test")
-
-#mean(mean.rate.per.softwareTest)
-##[1] 0.03104279
+barplot(sort(mean.rate.per.softwareTest,decreasing=TRUE),ylab="Average Failure Rate",xlab="Test",ylim=c(0,.5),ytick=c(0,.1,.2,.3,.4,.5),cex.lab=1.3,cex.axis=1.4)
