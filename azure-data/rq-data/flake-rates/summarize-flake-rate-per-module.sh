@@ -7,8 +7,8 @@ for f in $(cat ../module-info-filtered.csv ); do
     test=$(echo $f | cut -d, -f3);
 
     method_count=$(echo $f | cut -d, -f5);
-    tso_detected=$(grep $proj tso-flaky.csv | grep ,$mod, | wc -l);
-    iso_detected=$(grep $proj iso-flaky.csv | grep ,$mod, | wc -l);
+    tso_detected=$(grep $proj tso-flake-rate.csv | grep ,$mod, | wc -l);
+    iso_detected=$(grep $proj iso-flake-rate.csv | grep ,$mod, | wc -l);
 
     order_file=$( find per-module-order/ -name "*${test}-*" );
     order_count=$(cat $order_file | wc -l);
