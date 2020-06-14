@@ -139,16 +139,16 @@ ks.test(combinedFailRates$TSO,combinedFailRates$ISO,alternative="two.sided")
 
 # RQ3 -- Fail rate ECDF
 
-combinedFailRatesTransformed <- combinedFailRates %>% gather(howRun,failRate,2:3)
-combinedFailRatesECDF <- ggplot(combinedFailRatesTransformed, aes(x=failRate,group=howRun,linetype=howRun,color=howRun)) + 
-  	       stat_ecdf(geom = "step",size=1.2) + 
-  	       theme_bw() + 
-  	       theme(text = element_text(size=20),legend.position = "top",legend.key.width=unit(1,"cm")) +
-  	       scale_y_continuous(limits=c(0,1), labels=percent) +
-  	       labs(y="Cumulative Fraction Across Tests", x="Test Failure Rate") +
-	       scale_color_discrete(name="",breaks=c("ISO","TSO"),labels=c("ISO","TSO")) +
-  	       scale_linetype_discrete(name="",breaks=c("ISO","TSO"),labels=c("ISO","TSO"))
-ggsave(plot=combinedFailRatesECDF,file="FailRatesByTest.svg")
+#combinedFailRatesTransformed <- combinedFailRates %>% gather(howRun,failRate,2:3)
+#combinedFailRatesECDF <- ggplot(combinedFailRatesTransformed, aes(x=failRate,group=howRun,linetype=howRun,color=howRun)) + 
+  	       # stat_ecdf(geom = "step",size=1.2) + 
+  	       # theme_bw() + 
+  	       # theme(text = element_text(size=20),legend.position = "top",legend.key.width=unit(1,"cm")) +
+  	       # scale_y_continuous(limits=c(0,1), labels=percent) +
+  	       # labs(y="Cumulative Fraction Across Tests", x="Test Failure Rate") +
+	       # scale_color_discrete(name="",breaks=c("ISO","TSO"),labels=c("ISO","TSO")) +
+  	       # scale_linetype_discrete(name="",breaks=c("ISO","TSO"),labels=c("ISO","TSO"))
+#ggsave(plot=combinedFailRatesECDF,file="FailRatesByTest.svg")
 
 # RQ2 -- Burst lengths
 
