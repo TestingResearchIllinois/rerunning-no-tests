@@ -1,3 +1,8 @@
+if (!require("tidyverse")) install.packages("tidyverse",dependencies=T)
+if (!require("stringr")) install.packages("stringr",dependencies=T)
+if (!require("purrr")) install.packages("purrr",dependencies=T)
+if (!require("scales")) install.packages("scales",dependencies=T)
+
 library(tidyverse)
 library(stringr)
 library(purrr)
@@ -159,6 +164,4 @@ singleOrderFails <- allAzureFlakiesBurstsPerOrder %>% ungroup(test_class_order_m
 
 # orders for which the tests that fail in only one order were run
 allAzureDetailData %>% filter(test_name %in% singleOrderFails$test_name) %>% group_by(test_name) %>% summarize(orders=n_distinct(test_class_order_md5sum))
-`summarise()` ungrouping output (override with `.groups` argument)
-
 
