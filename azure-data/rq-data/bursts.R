@@ -2,6 +2,7 @@ if (!require("tidyverse")) install.packages("tidyverse",dependencies=T)
 if (!require("stringr")) install.packages("stringr",dependencies=T)
 if (!require("purrr")) install.packages("purrr",dependencies=T)
 if (!require("scales")) install.packages("scales",dependencies=T)
+if (!require("svglite")) install.packages("svglite",dependencies=T)
 
 library(tidyverse)
 library(stringr)
@@ -42,7 +43,7 @@ allAzureDetailDataISO <- bind_rows(azureDetailDataISO) %>%
 
 # remove filtered modules
 
-filteredModules <- read.csv("../module-info-filtered.csv",header=F)
+filteredModules <- read.csv("module-info-filtered.csv",header=F)
 colnames(filteredModules) <- c('slug','sha','some_test_name','module_path','some_number')
 filteredModules <- filteredModules %>%
 		select(slug,module_path) %>%
@@ -126,7 +127,7 @@ combinedMaxBurstsECDFInner <- ggplot(combinedMaxBurstsTransformedInner, aes(x=ma
 	       #scale_color_discrete(name="",breaks=c("ISO","TSO"),labels=c("ISO","TSO")) +
 	       scale_color_grey(name="",breaks=c("ISO","TSO"),labels=c("ISO","TSO"),end=0.7) +
   	       scale_shape_manual(name="",values=0:1,breaks=c("ISO","TSO"),labels=c("ISO","TSO"))
-ggsave(plot=combinedMaxBurstsECDFInner,file="burstsByTestInner.svg")
+ggsave(plot=combinedMaxBurstsECDFInner,file="burstsByTestCombined.svg")
 
 # RQ3 -- Hypothesis tests
 
@@ -138,7 +139,7 @@ ks.test(combinedFailRates$TSO,combinedFailRates$ISO,alternative="two.sided")
 
 # RQ3 -- Fail rate ECDF
 
-combinedFailRatesTansformed <- combinedFailRates %>% gather(howRun,failRate,2:3)
+combinedFailRatesTransformed <- combinedFailRates %>% gather(howRun,failRate,2:3)
 combinedFailRatesECDF <- ggplot(combinedFailRatesTransformed, aes(x=failRate,group=howRun,linetype=howRun,color=howRun)) + 
   	       stat_ecdf(geom = "step",size=1.2) + 
   	       theme_bw() + 
