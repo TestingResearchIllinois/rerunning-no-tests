@@ -5,7 +5,6 @@ Contents of this directory
 - multi-flaky-test-failures contains the data and scripts we used for RQ4 (Frequency of TSRs affected by flaky tests)
 - module-info-filtered.csv and module-mapping-filtered.csv are files used by some of the scripts in the subdirectories
 - bursts.R contains analysis scripts to answer RQs 1,2,3 regarding burst length. Before running the script, please make sure to have the relevant dependencies installed (e.g., build dependencies for R packages, curl, svglite, Cairo). This script requires the test result data to be downloaded and decompressed at paths relative to the script (please see the ```list.files``` in the script for more information). Specifically, the script uses the following:
-  - ```../all_tests/per-test-results``` is obtained from [here](https://drive.google.com/file/d/1x9brOhpuk6eRYz1l-ct1NDFbMh2PEDib). Note that the zip file is about 150MB zipped and 3.8GB unzipped.
-  - ```../all_tests_fixed_order/per-test-results``` is obtained from [here](https://drive.google.com/file/d/1mWHrs-Y0L0_9ki0jYUOJMADe0HvJxVWG). Note that the zip file is about 150MB zipped and 3.8GB unzipped.
+  - ```../all_tests_combined/per-test-results``` is obtained from [here](https://drive.google.com/file/d/1L_2uycsWzsKLV9fiZH5FdS8HvBElwMgI). Note that the zip file is about 281MB zipped and 6.9GB unzipped.
   - ```../isolation/per-test-results``` is obtained from [here](https://drive.google.com/file/d/17dcCrDyitqQKC6GsHLeeMzQx2fCJDYGw). Note that the zip file is about 2.6MB zipped and 113MB unzipped.
 - preprocess_per-test-results.sh used to preprocess the test result CSV files used by the bursts.R script
