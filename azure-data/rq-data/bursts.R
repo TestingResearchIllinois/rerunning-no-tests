@@ -11,9 +11,9 @@ library(scales)
 
 # read in test suite execution data
 
-azureDetailFiles <- list.files(path="../all_tests/per-test-results",recursive=T,pattern = ".csv$",full.names=T)
-azureDetailFilesFiO <- list.files(path="../all_tests_fixed_order/per-test-results",recursive=T,pattern = ".csv$",full.names=T)
-azureDetailFiles <- azureDetailFiles %>% append(azureDetailFilesFiO)
+azureDetailFiles <- list.files(path="../all_tests_combined/per-test-results",recursive=T,pattern = ".csv$",full.names=T)
+# azureDetailFilesFiO <- list.files(path="../all_tests_fixed_order/per-test-results",recursive=T,pattern = ".csv$",full.names=T)
+# azureDetailFiles <- azureDetailFiles %>% append(azureDetailFilesFiO)
 azureDetailData <- list()
 for (f in azureDetailFiles){
   frameName <- str_match(f,"(.+).csv")
