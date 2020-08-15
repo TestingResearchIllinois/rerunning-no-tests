@@ -8,5 +8,5 @@ org.zalando.riptide.failsafe.FailsafePluginRetriesTest
 org.zalando.riptide.failsafe.FailsafePluginNoCircuitBreakerTest
 org.zalando.riptide.failsafe.FailsafePluginCircuitBreakerTest
 org.zalando.riptide.failsafe.CompoundRetryListenerTest
-org.zalando.riptide.failsafe.CircuitBreakerListenerTest
 org.zalando.riptide.failsafe.CompoundDelayParserTest
+org.zalando.riptide.failsafe.CircuitBreakerListenerTest
