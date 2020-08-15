@@ -1,6 +1,6 @@
 #script to produce figure fig:rq2:ProportionFail
 
-tests=read.table(file="~/Downloads/flaky-rate-per-test-order-simplified.txt",sep=',',header=TRUE)
+tests=read.table(file="flaky-rate-per-test-order-simplified.csv",sep=',',header=TRUE)
 X=split(tests,tests$Test_name)
 
 #removing tests with one or two orderings
