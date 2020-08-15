@@ -24,4 +24,4 @@ module_id,0.0002
 \Use{TooTallNate/Java-WebSocket=._name},0.3007
 \Use{wro4j/wro4j=./wro4j-extensions_name},0.0132
 \Use{wso2/carbon-apimgt=./analyzer-modules/org.wso2.carbon.apimgt.throttling.siddhi.extension_name},0.0010
-\Use{zalando/riptide=./riptide-failsafe_name},0.1108
+\Use{zalando/riptide=./riptide-failsafe_name},0.1085
