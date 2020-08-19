@@ -1,5 +1,17 @@
 #!/bin/bash
 
+
+round()
+{
+    if [[ "$1" == "0.020" ]]; then
+	echo '$<$0.1';
+    elif [[ "$1" == "0.025" ]]; then
+	echo '$<$0.1';
+    else
+	echo $(printf %.$2f $(echo "scale=$2;(((10^$2)*$1)+0.5)/(10^$2)" | bc))
+    fi;
+};
+
 tminfail=0
 tmaxfail=0
 tsum=0
@@ -37,16 +49,16 @@ for f in $(tail -n +2 ../isoVtsoRate/all-test-info.csv | cut -d, -f1,4 | sort -u
 	    ic=$(( ic + 1))
 	fi
     done;
-    iminfail=$(printf %.1f $(echo "((4000 - $imaxpass) / 4000) * 100" | bc -l));
-    imaxfail=$(printf %.1f $(echo "((4000 - $iminpass) / 4000) * 100" | bc -l));
+    iminfail=$(printf %.3f $(echo "((4000 - $imaxpass) / 4000) * 100" | bc -l));
+    imaxfail=$(printf %.3f $(echo "((4000 - $iminpass) / 4000) * 100" | bc -l));
 
-    minfail=$(printf %.1f $(echo "((4000 - $maxpass) / 4000) * 100" | bc -l));
-    maxfail=$(printf %.1f $(echo "((4000 - $minpass) / 4000) * 100" | bc -l));
-    sumfail=$(printf %.1f $(echo "($sum / 4000) * 100" | bc -l));
+    minfail=$(printf %.3f $(echo "((4000 - $maxpass) / 4000) * 100" | bc -l));
+    maxfail=$(printf %.3f $(echo "((4000 - $minpass) / 4000) * 100" | bc -l));
+    sumfail=$(printf %.3f $(echo "($sum / 4000) * 100" | bc -l));
 
     map=$(grep "^$f," ../module-mapping-filtered.csv | cut -d, -f3);
     tv=$(grep "$map" ./tsr-rates.csv | cut -d, -f2);
-    tsr=$(printf %.1f $(echo "$tv * 100" | bc -l));
+    tsr=$(printf %.3f $(echo "$tv * 100" | bc -l));
 
     if (( $(echo "$sumfail > 100.0" | bc -l) )); then
 	sumfail="100.0";
@@ -55,46 +67,31 @@ for f in $(tail -n +2 ../isoVtsoRate/all-test-info.csv | cut -d, -f1,4 | sort -u
     if [[ "$ic" == "0" ]]; then
 	: # do nothing
     elif [[ "$ic" == "1" ]]; then
-	timinfail=$(printf %.1f $(echo "$imaxfail + $timinfail" | bc -l));
-	timaxfail=$(printf %.1f $(echo "$imaxfail + $timaxfail" | bc -l));
+	timinfail=$(printf %.3f $(echo "$imaxfail + $timinfail" | bc -l));
+	timaxfail=$(printf %.3f $(echo "$imaxfail + $timaxfail" | bc -l));
 	ttic=$(( ttic + 1))
     else
 	ttic=$(( ttic + 1))
-	timinfail=$(printf %.1f $(echo "$iminfail + $timinfail" | bc -l));
-	timaxfail=$(printf %.1f $(echo "$imaxfail + $timaxfail" | bc -l));
+	timinfail=$(printf %.3f $(echo "$iminfail + $timinfail" | bc -l));
+	timaxfail=$(printf %.3f $(echo "$imaxfail + $timaxfail" | bc -l));
     fi
 
-    tminfail=$(printf %.1f $(echo "$minfail + $tminfail" | bc -l));
-    tmaxfail=$(printf %.1f $(echo "$maxfail + $tmaxfail" | bc -l));
-    tsum=$(printf %.1f $(echo "$sumfail + $tsum" | bc -l));
-    ttsr=$(printf %.1f $(echo "$ttsr + $tsr" | bc -l));
+    tminfail=$(printf %.3f $(echo "$minfail + $tminfail" | bc -l));
+    tmaxfail=$(printf %.3f $(echo "$maxfail + $tmaxfail" | bc -l));
+    tsum=$(printf %.3f $(echo "$sumfail + $tsum" | bc -l));
+    ttsr=$(printf %.3f $(echo "$ttsr + $tsr" | bc -l));
 
-    if [[ "$iminfail" == "0.0" ]]; then
-	iminfail='$<$0.1';
-    fi;
-
-    if [[ "$imaxfail" == "0.0" ]]; then
-	imaxfail='$<$0.1';
-    fi;
-
-    if [[ "$tsr" == "0.0" ]]; then
-	tsr='$<$0.1';
-    fi;
-
-    if [[ "$minfail" == "0.0" ]]; then
-	minfail='$<$0.1';
-    fi;
-    
+    rounding="1"
     if [[ "$c" == "1" ]] && [[ "$ic" == "0" ]]; then
-	echo "$map & $tsr & = & = & = & n/a & n/a \\\\";
+	echo "$map & $(round $tsr $rounding) & = & = & = & n/a & n/a \\\\";
     elif [[ "$c" != "1" ]] && [[ "$ic" == "0" ]]; then
-	echo "$map & $tsr & $minfail & $maxfail & $sumfail & n/a & n/a \\\\";
+	echo "$map & $(round $tsr $rounding) & $(round $minfail $rounding) & $(round $maxfail $rounding) & $(round $sumfail $rounding) & n/a & n/a \\\\";
     elif [[ "$c" == "1" ]] && [[ "$ic" == "1" ]]; then
-	echo "$map & $tsr & = & = & = & $imaxfail & = \\\\";
+	echo "$map & $(round $tsr $rounding) & = & = & = & $(round $imaxfail $rounding) & = \\\\";
     elif [[ "$c" != "1" ]] && [[ "$ic" == "1" ]]; then
-	echo "$map & $tsr & $minfail & $maxfail & $sumfail & $imaxfail & = \\\\";
+	echo "$map & $(round $tsr $rounding) & $(round $minfail $rounding) & $(round $maxfail $rounding) & $(round $sumfail $rounding) & $(round $imaxfail $rounding) & = \\\\";
     else
-	echo "$map & $tsr & $minfail & $maxfail & $sumfail & $iminfail & $imaxfail \\\\";
+	echo "$map & $(round $tsr $rounding) & $(round $minfail $rounding) & $(round $maxfail $rounding) & $(round $sumfail $rounding) & $(round $iminfail $rounding) & $(round $imaxfail $rounding) \\\\";
     fi
 done
 
@@ -106,4 +103,4 @@ amaxfail=$(printf %.1f $(echo "$tmaxfail / 26" | bc -l));
 asum=$(printf %.1f $(echo "$tsum / 26" | bc -l));
 atsr=$(printf %.1f $(echo "$ttsr / 26" | bc -l));
 
-echo "\textbf{Total / Average} & \textbf{$atsr} & \textbf{$aminfail} & \textbf{$amaxfail} & \textbf{$asum} & \textbf{$aiminfail} & \textbf{$aimaxfail} \\\\"
+echo "\hline \multicolumn{2}{|l||}{\textbf{Total / Average}} & \textbf{$atsr} & \textbf{$aminfail} & \textbf{$amaxfail} & \textbf{$asum} & \textbf{$aiminfail} & \textbf{$aimaxfail} \\\\"
