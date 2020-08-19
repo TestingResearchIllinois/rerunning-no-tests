@@ -1,6 +1,6 @@
 #script to produce figure fig:rq2:AverageFlakeRatePerTest
 
-tests=read.table(file="~/Downloads/flaky-rate-per-test-order-simplified.txt",sep=',',header=TRUE)
+tests=read.table(file="flaky-rate-per-test-order-simplified.csv",sep=',',header=TRUE)
 X=split(tests,tests$Test_name)
 
 #average flake rate for 107 tests
