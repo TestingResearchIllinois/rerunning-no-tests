@@ -1,8 +1,8 @@
 Slug,Sha,Test_name,Module_name,TSO_num_runs,TSO_num_pass,ISO_num_runs,ISO_num_pass,TSO_flake_rate,ISO_flake_rate,Not_outlier
-https://github.com/alibaba/fastjson,e05e9c5e4be580691cc55a59f3256595393203a1,com.alibaba.json.bvt.issue_1200.Issue1298.test_for_issue_1,.,4000,3800,4000,0,5.000%,0.000%,FALSE
-https://github.com/alibaba/fastjson,e05e9c5e4be580691cc55a59f3256595393203a1,com.alibaba.json.bvt.issue_1200.Issue1298.test_for_issue,.,4000,3800,4000,0,5.000%,0.000%,FALSE
-https://github.com/alibaba/fastjson,e05e9c5e4be580691cc55a59f3256595393203a1,com.alibaba.json.bvt.parser.DefaultExtJSONParser_parseArray.test_7,.,4000,3900,4000,0,2.500%,0.000%,TRUE
-https://github.com/alibaba/fastjson,e05e9c5e4be580691cc55a59f3256595393203a1,com.alibaba.json.bvt.parser.DefaultExtJSONParser_parseArray.test_8,.,4000,3900,4000,0,2.500%,0.000%,TRUE
+https://github.com/alibaba/fastjson,e05e9c5e4be580691cc55a59f3256595393203a1,com.alibaba.json.bvt.issue_1200.Issue1298.test_for_issue_1,.,4000,3800,4000,0,5.000%,100.000%,FALSE
+https://github.com/alibaba/fastjson,e05e9c5e4be580691cc55a59f3256595393203a1,com.alibaba.json.bvt.issue_1200.Issue1298.test_for_issue,.,4000,3800,4000,0,5.000%,100.000%,FALSE
+https://github.com/alibaba/fastjson,e05e9c5e4be580691cc55a59f3256595393203a1,com.alibaba.json.bvt.parser.DefaultExtJSONParser_parseArray.test_7,.,4000,3900,4000,0,2.500%,100.000%,FALSE
+https://github.com/alibaba/fastjson,e05e9c5e4be580691cc55a59f3256595393203a1,com.alibaba.json.bvt.parser.DefaultExtJSONParser_parseArray.test_8,.,4000,3900,4000,0,2.500%,100.000%,FALSE
 https://github.com/alibaba/fastjson,e05e9c5e4be580691cc55a59f3256595393203a1,com.alibaba.json.bvt.serializer.ConcurrentHashMapTest5.test_concurrentHashmap,.,4000,3997,4000,4000,0.075%,0.000%,TRUE
 https://github.com/alibaba/fastjson,e05e9c5e4be580691cc55a59f3256595393203a1,com.alibaba.json.bvt.serializer.ConcurrentHashMapTest6.test_concurrentHashmap,.,4000,3994,4000,4000,0.150%,0.000%,TRUE
 https://github.com/apache/incubator-dubbo,737f7a7ea67832d7f17517326fb2491d0a086dd7,org.apache.dubbo.remoting.exchange.support.header.HeartbeatHandlerTest.testHeartbeat,./dubbo-remoting/dubbo-remoting-netty,4000,3981,4000,4000,0.475%,0.000%,TRUE

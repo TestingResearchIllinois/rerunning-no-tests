@@ -1,6 +1,4 @@
 Test_name,TSO_flake_rate,ISO_flake_rate
-com.alibaba.json.bvt.parser.DefaultExtJSONParser_parseArray.test_7,2.500%,0.000%
-com.alibaba.json.bvt.parser.DefaultExtJSONParser_parseArray.test_8,2.500%,0.000%
 com.alibaba.json.bvt.serializer.ConcurrentHashMapTest5.test_concurrentHashmap,0.075%,0.000%
 com.alibaba.json.bvt.serializer.ConcurrentHashMapTest6.test_concurrentHashmap,0.150%,0.000%
 org.apache.dubbo.remoting.exchange.support.header.HeartbeatHandlerTest.testHeartbeat,0.475%,0.000%
