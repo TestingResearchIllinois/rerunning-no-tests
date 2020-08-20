@@ -20,5 +20,8 @@ for (i in 1:length(X)){
     FailOrderingCount.per.softwareTest[i]=sum(X[[i]]$Order_Flake_rate!=0)/length(X[[i]]$Order_Flake_rate)
 }
 
-boxplot(FailOrderingCount.per.softwareTest, xlab=("Proportion of Orderings with >1 Failure per Test"),ylim=c(0,1),horizontal=TRUE,cex.lab=1.5,cex.axis=1.5,xaxt="n")
-axis(1, at=c(0,.1,.2,.3,.4,.5,.6,.7,.8,.9,1), labels=paste0(c(0,.1,.2,.3,.4,.5,.6,.7,.8,.9,1)*100, "%"),cex.lab=1.5,cex.axis=1.1)
+pdf(file="./ProportionFail.pdf",width=8,height=4)
+boxplot(FailOrderingCount.per.softwareTest, width=1, xlab=("Proportion of Orderings with >1 Failure per Test"),ylim=c(0,1),horizontal=TRUE,cex.lab=1.5,cex.axis=1,xaxt="n")
+axis(1, at=c(0,.1,.2,.3,.4,.5,.6,.7,.8,.9,1), labels=paste0(c(0,.1,.2,.3,.4,.5,.6,.7,.8,.9,1)*100, "%"),cex.lab=1.4,cex.axis=1.1)
+graphics.off()
+
