@@ -57,9 +57,9 @@ https://github.com/nationalsecurityagency/timely,3a8cbd3378cffdc96aad1c52e9b0b2e
 https://github.com/oracle/oci-java-sdk,2e9982f268420efd4010d8dc8370e9d9ade67ec2,com.oracle.bmc.objectstorage.transfer.ProgressTrackerTest.singleUploadProgressTrackerFactory_resetProgressTracker,./bmc-objectstorage/bmc-objectstorage-extensions,flaky,4000,3999,1,0
 https://github.com/orbit/orbit,c4904af2f3745fea93871493edd7e09348e77768,cloud.orbit.actors.extensions.test.LengthFieldHandlerTest.randomMessages,./actors/runtime,flaky,4000,3996,0,4
 https://github.com/OryxProject/oryx,72ae4bb3cc49d92b77e76d8a30fca8b6549b8865,com.cloudera.oryx.common.io.IOUtilsTest.testDistinctFreePorts,./framework/oryx-common,flaky,4000,3970,0,30
-https://github.com/spinn3r/noxy,d53a49421f385c70b5abe7e8cda84ff3a7b59c71,com.spinn3r.noxy.discovery.zookeeper.ZKTest.testBulkClusterJoining,./noxy-discovery-zookeeper,flaky,4000,2000,2000,0
-https://github.com/spinn3r/noxy,d53a49421f385c70b5abe7e8cda84ff3a7b59c71,com.spinn3r.noxy.discovery.zookeeper.ZKTest.testMembershipJoinAndLeave,./noxy-discovery-zookeeper,flaky,4000,1960,2040,0
-https://github.com/spinn3r/noxy,d53a49421f385c70b5abe7e8cda84ff3a7b59c71,com.spinn3r.noxy.discovery.zookeeper.ZKTest.testDiscoveryListener,./noxy-discovery-zookeeper,flaky,4000,2000,2000,0
+https://github.com/spinn3r/noxy,d53a49421f385c70b5abe7e8cda84ff3a7b59c71,com.spinn3r.noxy.discovery.zookeeper.ZKTest.testBulkClusterJoining,./noxy-discovery-zookeeper,flaky,4000,2040,1960,0
+https://github.com/spinn3r/noxy,d53a49421f385c70b5abe7e8cda84ff3a7b59c71,com.spinn3r.noxy.discovery.zookeeper.ZKTest.testMembershipJoinAndLeave,./noxy-discovery-zookeeper,flaky,4000,2000,2000,0
+https://github.com/spinn3r/noxy,d53a49421f385c70b5abe7e8cda84ff3a7b59c71,com.spinn3r.noxy.discovery.zookeeper.ZKTest.testDiscoveryListener,./noxy-discovery-zookeeper,flaky,4000,2040,1960,0
 https://github.com/spotify/helios,aebf68dcbdf9d3850478e8bddd2c478fa5fa282a,com.spotify.helios.testing.SimpleTest.simpleTest,./helios-testing,flaky,900,863,0,37
 https://github.com/spotify/helios,aebf68dcbdf9d3850478e8bddd2c478fa5fa282a,com.spotify.helios.testing.TempJobFailureTest.testDeploymentFailure,./helios-testing,flaky,900,899,0,1
 https://github.com/spotify/helios,aebf68dcbdf9d3850478e8bddd2c478fa5fa282a,com.spotify.helios.testing.HeliosSoloDeploymentTest.testUndeployLeftoverJobs,./helios-testing,flaky,900,852,10,38

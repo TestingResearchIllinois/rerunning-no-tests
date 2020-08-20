@@ -1024,9 +1024,9 @@ com.cloudera.oryx.common.io.IOUtilsTest.testDistinctFreePorts,c48e2aaf60b96360cc
 com.cloudera.oryx.common.io.IOUtilsTest.testDistinctFreePorts,cbd05b6bfea1dcfee26f8b1cfa2f78db,0.01,100
 com.cloudera.oryx.common.io.IOUtilsTest.testDistinctFreePorts,d251b31e542d0d0b9214e7d388701815,0.0,100
 com.cloudera.oryx.common.io.IOUtilsTest.testDistinctFreePorts,dd0fea7893135fdc86f82134e06a4f18,0.01,100
-com.spinn3r.noxy.discovery.zookeeper.ZKTest.testBulkClusterJoining,8a7d2492d40a8f6b5413cddc5e700bdb,0.5,4000
-com.spinn3r.noxy.discovery.zookeeper.ZKTest.testDiscoveryListener,8a7d2492d40a8f6b5413cddc5e700bdb,0.5,4000
-com.spinn3r.noxy.discovery.zookeeper.ZKTest.testMembershipJoinAndLeave,8a7d2492d40a8f6b5413cddc5e700bdb,0.51,4000
+com.spinn3r.noxy.discovery.zookeeper.ZKTest.testBulkClusterJoining,8a7d2492d40a8f6b5413cddc5e700bdb,0.49,4000
+com.spinn3r.noxy.discovery.zookeeper.ZKTest.testDiscoveryListener,8a7d2492d40a8f6b5413cddc5e700bdb,0.49,4000
+com.spinn3r.noxy.discovery.zookeeper.ZKTest.testMembershipJoinAndLeave,8a7d2492d40a8f6b5413cddc5e700bdb,0.50,4000
 retrofit2.adapter.rxjava.CompletableThrowingSafeSubscriberTest.throwingInOnCompleteDeliveredToPlugin,01c2396fb512adf8e7c1eb9f7a5135a6,0.0,100
 retrofit2.adapter.rxjava.CompletableThrowingSafeSubscriberTest.throwingInOnCompleteDeliveredToPlugin,0d9315d49e71844ce6fc1472d044ecf1,0.0,100
 retrofit2.adapter.rxjava.CompletableThrowingSafeSubscriberTest.throwingInOnCompleteDeliveredToPlugin,12720cb65beb17cf54f28a00be866f60,0.0,100

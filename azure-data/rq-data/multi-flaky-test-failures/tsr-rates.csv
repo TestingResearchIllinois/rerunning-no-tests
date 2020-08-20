@@ -18,7 +18,7 @@ module_id,0.0002
 \Use{oracle/oci-java-sdk=./bmc-objectstorage/bmc-objectstorage-extensions_name},0.0002
 \Use{orbit/orbit=./actors/runtime_name},0.0010
 \Use{OryxProject/oryx=./framework/oryx-common_name},0.0075
-\Use{spinn3r/noxy=./noxy-discovery-zookeeper_name},0.5100
+\Use{spinn3r/noxy=./noxy-discovery-zookeeper_name},0.5000
 \Use{square/retrofit=./retrofit-adapters/rxjava_name},0.0135
 \Use{square/retrofit=./retrofit_name},0.0012
 \Use{TooTallNate/Java-WebSocket=._name},0.3007

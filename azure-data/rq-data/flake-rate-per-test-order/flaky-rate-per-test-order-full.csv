@@ -1024,9 +1024,9 @@ Module_ID,Test_name,Order_ID,Order_Flake_rate,Num_runs,Num_pass,Num_fail,Num_err
 \Use{OryxProject/oryx=./framework/oryx-common_name},com.cloudera.oryx.common.io.IOUtilsTest.testDistinctFreePorts,cbd05b6bfea1dcfee26f8b1cfa2f78db,0.01,100,99,0,1,18,19
 \Use{OryxProject/oryx=./framework/oryx-common_name},com.cloudera.oryx.common.io.IOUtilsTest.testDistinctFreePorts,d251b31e542d0d0b9214e7d388701815,0.0,100,100,0,0,6,19
 \Use{OryxProject/oryx=./framework/oryx-common_name},com.cloudera.oryx.common.io.IOUtilsTest.testDistinctFreePorts,dd0fea7893135fdc86f82134e06a4f18,0.01,100,99,0,1,13,19
-\Use{spinn3r/noxy=./noxy-discovery-zookeeper_name},com.spinn3r.noxy.discovery.zookeeper.ZKTest.testBulkClusterJoining,8a7d2492d40a8f6b5413cddc5e700bdb,0.5,4000,2000,2000,0,0,1
-\Use{spinn3r/noxy=./noxy-discovery-zookeeper_name},com.spinn3r.noxy.discovery.zookeeper.ZKTest.testDiscoveryListener,8a7d2492d40a8f6b5413cddc5e700bdb,0.5,4000,2000,2000,0,0,1
-\Use{spinn3r/noxy=./noxy-discovery-zookeeper_name},com.spinn3r.noxy.discovery.zookeeper.ZKTest.testMembershipJoinAndLeave,8a7d2492d40a8f6b5413cddc5e700bdb,0.51,4000,1960,2040,0,0,1
+\Use{spinn3r/noxy=./noxy-discovery-zookeeper_name},com.spinn3r.noxy.discovery.zookeeper.ZKTest.testBulkClusterJoining,8a7d2492d40a8f6b5413cddc5e700bdb,0.49,4000,2040,1960,0,0,1
+\Use{spinn3r/noxy=./noxy-discovery-zookeeper_name},com.spinn3r.noxy.discovery.zookeeper.ZKTest.testDiscoveryListener,8a7d2492d40a8f6b5413cddc5e700bdb,0.49,4000,2040,1960,0,0,1
+\Use{spinn3r/noxy=./noxy-discovery-zookeeper_name},com.spinn3r.noxy.discovery.zookeeper.ZKTest.testMembershipJoinAndLeave,8a7d2492d40a8f6b5413cddc5e700bdb,0.50,4000,2000,2000,0,0,1
 \Use{square/retrofit=./retrofit-adapters/rxjava_name},retrofit2.adapter.rxjava.CompletableThrowingSafeSubscriberTest.throwingInOnCompleteDeliveredToPlugin,01c2396fb512adf8e7c1eb9f7a5135a6,0.0,100,100,0,0,10,15
 \Use{square/retrofit=./retrofit-adapters/rxjava_name},retrofit2.adapter.rxjava.CompletableThrowingSafeSubscriberTest.throwingInOnCompleteDeliveredToPlugin,0d9315d49e71844ce6fc1472d044ecf1,0.0,100,100,0,0,2,15
 \Use{square/retrofit=./retrofit-adapters/rxjava_name},retrofit2.adapter.rxjava.CompletableThrowingSafeSubscriberTest.throwingInOnCompleteDeliveredToPlugin,12720cb65beb17cf54f28a00be866f60,0.0,100,100,0,0,0,15
