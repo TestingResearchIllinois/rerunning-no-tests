@@ -107,25 +107,25 @@ overallFailRateTS <- allAzureFlakies %>% group_by(test_name) %>% summarize(rate=
 #   	       labs(y="Cumulative Fraction Across Tests", x="Test Failure Burst Length")
 # ggsave(plot=TSOMaxBurstsECDF,file="TSOBurstsByTest.svg")
 
-# allAzureFlakiesBurstsPerTestISO <- getCrossTSRStats(allAzureFlakiesISO,c("test_name","machine_id","slug","module_path","test_class_order_md5sum"))
-# allAzureFlakiesBurstsPerTestISO <- allAzureFlakiesBurstsPerTestISO %>% group_by(test_name) %>% summarize(maxConsecFail=max(maxConsecFail))
-# combinedMaxBursts <- full_join(allAzureFlakiesBurstsPerTest %>% select(test_name,TSO=maxConsecFail),allAzureFlakiesBurstsPerTestISO %>% select(test_name,ISO=maxConsecFail))
-# combinedMaxBurstsTransformed <- gather(combinedMaxBursts,howRun,maxBurst,2:3)
+allAzureFlakiesBurstsPerTestISO <- getCrossTSRStats(allAzureFlakiesISO,c("test_name","machine_id","slug","module_path","test_class_order_md5sum"))
+allAzureFlakiesBurstsPerTestISO <- allAzureFlakiesBurstsPerTestISO %>% group_by(test_name) %>% summarize(maxConsecFail=max(maxConsecFail))
+combinedMaxBursts <- full_join(allAzureFlakiesBurstsPerTest %>% select(test_name,TSO=maxConsecFail),allAzureFlakiesBurstsPerTestISO %>% select(test_name,ISO=maxConsecFail))
+combinedMaxBurstsTransformed <- gather(combinedMaxBursts,howRun,maxBurst,2:3)
 
-# combinedMaxBurstsInner <- inner_join(allAzureFlakiesBurstsPerTest %>% select(test_name,TSO=maxConsecFail),allAzureFlakiesBurstsPerTestISO %>% select(test_name,ISO=maxConsecFail))
-# combinedMaxBurstsTransformedInner <- gather(combinedMaxBurstsInner,howRun,maxBurst,2:3)
+combinedMaxBurstsInner <- inner_join(allAzureFlakiesBurstsPerTest %>% select(test_name,TSO=maxConsecFail),allAzureFlakiesBurstsPerTestISO %>% select(test_name,ISO=maxConsecFail))
+combinedMaxBurstsTransformedInner <- gather(combinedMaxBurstsInner,howRun,maxBurst,TSO:ISO)
 
-# combinedMaxBurstsECDFInner <- ggplot(combinedMaxBurstsTransformedInner, aes(x=maxBurst,group=howRun,shape=howRun,color=howRun)) + 
-#   	       stat_ecdf(geom = "step",size=1.2) +
-#   	       theme_bw() + 
-#   	       theme(text = element_text(size=20),legend.position = "top",legend.key.width=unit(1,"cm")) +
-#   	       scale_y_continuous(limits=c(0,1), labels=percent) +
-# 	       scale_x_continuous(breaks=c(0,5,10,seq(20,100,20)),minor_breaks=c(seq(30,90,20))) +	       
-#   	       labs(y="Cumulative Fraction Across Tests", x="Test Failure Burst Length") +
-# 	       #scale_color_discrete(name="",breaks=c("ISO","TSO"),labels=c("ISO","TSO")) +
-# 	       scale_color_grey(name="",breaks=c("ISO","TSO"),labels=c("ISO","TSO"),end=0.7) +
-#   	       scale_shape_manual(name="",values=0:1,breaks=c("ISO","TSO"),labels=c("ISO","TSO"))
-# ggsave(plot=combinedMaxBurstsECDFInner,file="burstsByTestCombined.svg")
+combinedMaxBurstsECDFInner <- ggplot(combinedMaxBurstsTransformedInner, aes(x=maxBurst,group=howRun,shape=howRun,color=howRun)) + 
+  	       stat_ecdf(geom = "step",size=1) +
+  	       theme_bw() + 
+  	       theme(text = element_text(size=15),legend.position = c(.65,.2),legend.key.width=unit(1,"cm")) +
+  	       scale_y_continuous(limits=c(0,1), labels=percent) +
+	       scale_x_continuous(breaks=c(0,5,10,seq(20,100,20)),minor_breaks=c(seq(30,90,20))) +	       
+  	       labs(y="Cumulative Fraction Across Tests", x="Maximal Test Failure Burst Length",color="Test Run Configuration") +
+	       #scale_color_discrete(name="",breaks=c("ISO","TSO"),labels=c("ISO","TSO")) +
+	       scale_color_grey(name="",breaks=c("TSO","ISO"),labels=c("TSO","ISO"),end=0.7) +
+  	       scale_shape_manual(name="",values=0:1,breaks=c("TSO","ISO"),labels=c("TSO","ISO"))
+ggsave(plot=combinedMaxBurstsECDFInner,file="burstsByTestCombined.svg")
 
 # RQ3 -- Hypothesis tests
 
@@ -166,26 +166,27 @@ allAzureDetailData %>% filter(test_name %in% singleOrderFails$test_name) %>% gro
 
 # RQ3: Max burst length ECDF for ISO vs. TSO
 
-allAzureFlakiesBurstsPerTestISO <- getCrossTSRStats(allAzureFlakiesISO,c("test_name","machine_id","slug","module_path","test_class_order_md5sum"))
-allAzureFlakiesBurstsPerTestISO <- allAzureFlakiesBurstsPerTestISO %>% group_by(test_name) %>% summarize(maxConsecFail=max(maxConsecFail))
-combinedMaxBursts <- full_join(allAzureFlakiesBurstsPerTest %>% select(test_name,TSO=maxConsecFail),allAzureFlakiesBurstsPerTestISO %>% select(test_name,ISO=maxConsecFail))
-combinedMaxBurstsTransformed <- gather(combinedMaxBursts,howRun,maxBurst,2:3)
+# allAzureFlakiesBurstsPerTestISO <- getCrossTSRStats(allAzureFlakiesISO,c("test_name","machine_id","slug","module_path","test_class_order_md5sum"))
+# allAzureFlakiesBurstsPerTestISO <- allAzureFlakiesBurstsPerTestISO %>% group_by(test_name) %>% summarize(maxConsecFail=max(maxConsecFail))
+# combinedMaxBursts <- full_join(allAzureFlakiesBurstsPerTest %>% select(test_name,TSO=maxConsecFail),allAzureFlakiesBurstsPerTestISO %>% select(test_name,ISO=maxConsecFail))
+# combinedMaxBurstsTransformed <- gather(combinedMaxBursts,howRun,maxBurst,2:3)
 
-combinedMaxBurstsInner <- inner_join(allAzureFlakiesBurstsPerTest %>% select(test_name,TSO=maxConsecFail),allAzureFlakiesBurstsPerTestISO %>% select(test_name,ISO=maxConsecFail))
-combinedMaxBurstsTransformedInner <- gather(combinedMaxBurstsInner,howRun,maxBurst,2:3)
+# combinedMaxBurstsInner <- inner_join(allAzureFlakiesBurstsPerTest %>% select(test_name,TSO=maxConsecFail),allAzureFlakiesBurstsPerTestISO %>% select(test_name,ISO=maxConsecFail))
+# combinedMaxBurstsTransformedInner <- gather(combinedMaxBurstsInner,howRun,maxBurst,TSO:ISO)
 
-combinedMaxBurstsTransformedInner$howRun <- factor(combinedMaxBurstsTransformedInner$howRun,levels=rev(levels(factor(combinedMaxBurstsTransformedInner$howRun))))
-combinedISO_TSOMaxBurstsECDF <- ggplot(combinedMaxBurstsTransformedInner, aes(x=maxBurst,group=howRun,color=howRun)) + 
-  	       stat_ecdf(geom = "step",size=1) +
-  	       theme_bw() + 
-  	       theme(text = element_text(size=15),legend.position=c(0.65,0.2),legend.key.width=unit(1,"cm")) +
-  	       scale_y_continuous(limits=c(0,1), labels=percent) +
-	       scale_x_continuous(breaks=c(0,5,10,seq(20,100,20)),minor_breaks=c(seq(30,90,20))) +
-  	       labs(y="Cumulative Fraction Across Tests", x="Maximal Test Failure Burst Length",color="Test Run Configuration") +
-	       #scale_color_discrete(name="",breaks=c("TSO","ISO"),labels=c("TSO","ISO")) +
-	       scale_color_grey(name="Test Run Configuration",breaks=c("TSO","ISO"),labels=c("TSO","ISO"),end=0.7) +
-#  	       scale_shape_manual(name="",values=0:1,breaks=c("TSO","ISO"),labels=c("TSO","ISO"))
-ggsave(plot=combinedISO_TSOMaxBurstsECDF,file="ISO_TSOBurstsByTest.svg",width=5,height=4.3)
+# combinedMaxBurstsTransformedInner$howRun <- factor(combinedMaxBurstsTransformedInner$howRun,levels=rev(levels(factor(combinedMaxBurstsTransformedInner$howRun))))
+
+# combinedblahMaxBurstsECDF <- ggplot(combinedMaxBurstsTransformedInner, aes(x=maxBurst,group=howRun,color=howRun)) +
+#   	       stat_ecdf(geom = "step",size=1) +
+#   	       theme_bw() + 
+#   	       theme(text = element_text(size=15),legend.position=c(0.65,0.2),legend.key.width=unit(1,"cm")) +
+#   	       scale_y_continuous(limits=c(0,1), labels=percent) +
+# 	       scale_x_continuous(breaks=c(0,5,10,seq(20,100,20)),minor_breaks=c(seq(30,90,20))) +
+#   	       labs(y="Cumulative Fraction Across Tests", x="Maximal Test Failure Burst Length",color="Test Run Configuration") +
+# 	       #scale_color_discrete(name="",breaks=c("TSO","ISO"),labels=c("TSO","ISO")) +
+# 	       scale_color_grey(name="Test Run Configuration",breaks=c("TSO","ISO"),labels=c("TSO","ISO"),end=0.7) +
+# #  	       scale_shape_manual(name="",values=0:1,breaks=c("TSO","ISO"),labels=c("TSO","ISO"))
+# ggsave(plot=combinedblahMaxBurstsECDF,file="ISO_TSOBurstsByTest.svg",width=5,height=4.3)
 
 # combinedFailRatesTransformed$howRun <- factor(combinedFailRatesTransformed$howRun,levels=rev(levels(factor(combinedFailRatesTransformed$howRun))))
 
