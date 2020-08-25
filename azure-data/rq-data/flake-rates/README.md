@@ -3,6 +3,7 @@ Contents of this directory
 - per-module-order contains for each module the unique test class orderings that we observed from our test suite runs
 - iso-flake-rate.csv contains the flake rate for isolation runs
 - tso-flake-rate.csv contains the flake rate for test suite runs
+- TSOburstLengthsECDF.R contains the script to generate Figure 3 in the paper.
 
 Within each *-flake-rate.csv the format of the contents are:
 `slug,sha,test_name,module_path,summarized_test_result,num_runs,num_pass,num_error,num_fail`
