@@ -1,5 +1,8 @@
 #script to produce figure fig:rq2:ProportionFail
 
+library(ggplot2)
+library(scales)
+
 tests=read.table(file="flaky-rate-per-test-order-simplified.csv",sep=',',header=TRUE)
 X=split(tests,tests$Test_name)
 
@@ -20,26 +23,22 @@ for (i in 1:length(X)){
     FailOrderingCount.per.softwareTest[i]=sum(X[[i]]$Order_Flake_rate!=0)/length(X[[i]]$Order_Flake_rate)
 }
 
-pdf(file="./ProportionFail.pdf",width=12,height=3)
-boxplot(FailOrderingCount.per.softwareTest, width=1, xlab=("Ratio of Orders with >1 Failure per Test"),ylim=c(0,1),horizontal=TRUE,cex.lab=2,cex.axis=1.5,xaxt="n")
-axis(1, at=c(0,.1,.2,.3,.4,.5,.6,.7,.8,.9,1), labels=paste0(c(0,.1,.2,.3,.4,.5,.6,.7,.8,.9,1)*100, "%"),cex.lab=2,cex.axis=1.5)
-graphics.off()
-
-library(ggplot2)
-library(scales)
 plotData <- data.frame(FailOrderingCount.per.softwareTest)
 colnames(plotData) <- c("data")
+
 propFailBP <- ggplot(plotData,aes(y=data)) +
 	      stat_boxplot(geom='errorbar',width=0.33) +
 	      geom_boxplot(width=.5) +
 	      theme_bw() +
-	      theme(
-	      panel.grid.major.y = element_blank(), panel.grid.minor.y = element_blank(),
-	      #panel.background = element_blank(),
-	      
-	      axis.line = element_line(colour = "black"),axis.title=element_blank(),axis.ticks.y=element_blank(),axis.text.y=element_blank(),text = element_text(size=30)) +
-#	      labs(y="Ratio of Orders with >1 Failure per Test") +
-	      scale_y_continuous(labels=scales::percent,limits=c(0,1),breaks=seq(0,10,2)/10) +
+	      theme(panel.grid.major.y = element_blank(),
+	      	    panel.grid.minor.y = element_blank(),
+	            axis.line = element_line(colour = "black"),
+		    axis.title=element_blank(),
+		    axis.ticks.y=element_blank(),
+		    axis.text.y=element_blank(),
+		    text = element_text(size=30)) +
+	      scale_y_continuous(labels=scales::percent,limits=c(0,1),
+				 breaks=seq(0,10,2)/10) +
 	      scale_x_continuous(expand=expansion(add=.15)) +
 	      coord_flip()
 ggsave(plot=propFailBP,file="ProportionFail.svg",height=1.5,width=10)
