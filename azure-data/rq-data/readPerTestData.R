@@ -11,7 +11,7 @@ library(scales)
 
 # read in test execution data
 
-azureDetailFiles <- list.files(path="./combined-filtered-per-test-results",recursive=T,pattern = ".csv$",full.names=T)
+azureDetailFiles <- list.files(path="tso-per-test-results",recursive=T,pattern = ".csv$",full.names=T)
 azureDetailData <- list()
 for (f in azureDetailFiles){
   frameName <- str_match(f,"(.+).csv")
@@ -28,7 +28,7 @@ allAzureDetailData <- bind_rows(azureDetailData) %>%
 
 # read in isolation run data
 
-azureDetailFilesISO <- list.files(path="./per-test-results",recursive=T,pattern = ".csv$",full.names=T)
+azureDetailFilesISO <- list.files(path="iso-per-test-results",recursive=T,pattern = ".csv$",full.names=T)
 azureDetailDataISO <- list()
 for (f in azureDetailFilesISO){
   frameName <- str_match(f,"(.+).csv")
