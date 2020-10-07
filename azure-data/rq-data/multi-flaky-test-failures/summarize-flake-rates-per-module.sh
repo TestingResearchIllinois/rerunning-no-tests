@@ -21,7 +21,7 @@ timinfail=0
 timaxfail=0
 ttic=0
 
-for f in $(tail -n +2 ../isoVtsoRate/all-test-info.csv | cut -d, -f1,4 | sort -u); do
+for f in $(tail -n +2 all-test-info.csv | cut -d, -f1,4 | sort -u); do
     imaxpass=0;
     iminpass=5000;
     
@@ -35,7 +35,7 @@ for f in $(tail -n +2 ../isoVtsoRate/all-test-info.csv | cut -d, -f1,4 | sort -u
 
     ic=0;
 
-    for g in $(grep "^$s," ../isoVtsoRate/all-test-info.csv | grep ,$m,); do
+    for g in $(grep "^$s," all-test-info.csv | grep ,$m,); do
 	c=$(( c + 1));
 	pass=$(echo $g | cut -d, -f6);
 	maxpass=$(( maxpass < pass ? pass : maxpass ));
@@ -43,6 +43,7 @@ for f in $(tail -n +2 ../isoVtsoRate/all-test-info.csv | cut -d, -f1,4 | sort -u
 	sum=$(( sum + (4000 - pass) ));
 
 	ipass=$(echo $g | cut -d, -f8);
+	# if [[ "$ipass" != "4000" ]]; then
 	if [[ "$ipass" != "4000" ]] && [[ "$ipass" != "0" ]]; then
 	    imaxpass=$(( imaxpass < ipass ? ipass : imaxpass ));
 	    iminpass=$(( iminpass < ipass ? iminpass : ipass ));
