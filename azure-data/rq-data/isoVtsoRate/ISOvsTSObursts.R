@@ -12,9 +12,14 @@ if(!exists("getCrossTSRStats",mode="function")) {
 # RQ3: Max burst length ECDF for ISO vs. TSO
 
 allAzureFlakiesBurstsPerTest <- getCrossTSRStats(allAzureFlakies,c("test_name","machine_id","slug","module_path","test_class_order_md5sum"))
+allAzureFlakiesBurstsPerTest <- allAzureFlakiesBurstsPerTest %>%
+			     	ungroup() %>%
+			     	group_by(test_name) %>%
+				summarize(maxConsecFail=max(maxConsecFail)) 
 
 allAzureFlakiesBurstsPerTestISO <- getCrossTSRStats(allAzureFlakiesISO,c("test_name","machine_id","slug","module_path","test_class_order_md5sum"))
 allAzureFlakiesBurstsPerTestISO <- allAzureFlakiesBurstsPerTestISO %>%
+				   ungroup() %>%
 				   group_by(test_name) %>%
 				   summarize(maxConsecFail=max(maxConsecFail))
 
