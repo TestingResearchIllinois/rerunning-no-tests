@@ -4,9 +4,6 @@ https://github.com/alibaba/fastjson,e05e9c5e4be580691cc55a59f3256595393203a1,com
 https://github.com/alibaba/fastjson,e05e9c5e4be580691cc55a59f3256595393203a1,com.alibaba.json.bvt.parser.DefaultExtJSONParser_parseArray.test_8,.,flaky,4000,3900,0,100
 https://github.com/alibaba/fastjson,e05e9c5e4be580691cc55a59f3256595393203a1,com.alibaba.json.bvt.serializer.ConcurrentHashMapTest5.test_concurrentHashmap,.,flaky,4000,3997,0,3
 https://github.com/alibaba/fastjson,e05e9c5e4be580691cc55a59f3256595393203a1,com.alibaba.json.bvt.issue_1200.Issue1298.test_for_issue,.,flaky,4000,3800,0,200
-https://github.com/apache/hbase,801fc05e9c082ab12c7c1207087d3667ab162d1a,org.apache.hadoop.hbase.procedure2.store.wal.TestWALProcedureStore.testEmptyRoll,./hbase-procedure,flaky,4000,3989,0,11
-https://github.com/apache/hbase,801fc05e9c082ab12c7c1207087d3667ab162d1a,org.apache.hadoop.hbase.procedure2.store.wal.TestWALProcedureStore.testRestartWithoutData,./hbase-procedure,flaky,4000,3989,0,11
-https://github.com/apache/hbase,801fc05e9c082ab12c7c1207087d3667ab162d1a,org.apache.hadoop.hbase.procedure2.TestProcedureSkipPersistence.test,./hbase-procedure,flaky,3978,3628,0,350
 https://github.com/apache/incubator-dubbo,737f7a7ea67832d7f17517326fb2491d0a086dd7,org.apache.dubbo.remoting.transport.netty.ThreadNameTest.testThreadName,./dubbo-remoting/dubbo-remoting-netty,flaky,4000,3985,0,15
 https://github.com/apache/incubator-dubbo,737f7a7ea67832d7f17517326fb2491d0a086dd7,org.apache.dubbo.remoting.transport.netty.ClientReconnectTest.testReconnectWarnLog,./dubbo-remoting/dubbo-remoting-netty,flaky,4000,3997,0,3
 https://github.com/apache/incubator-dubbo,737f7a7ea67832d7f17517326fb2491d0a086dd7,org.apache.dubbo.remoting.exchange.support.header.HeartbeatHandlerTest.testHeartbeat,./dubbo-remoting/dubbo-remoting-netty,flaky,4000,3981,0,19
@@ -19,7 +16,6 @@ https://github.com/apache/incubator-dubbo,737f7a7ea67832d7f17517326fb2491d0a086d
 https://github.com/apache/incubator-dubbo,737f7a7ea67832d7f17517326fb2491d0a086dd7,org.apache.dubbo.rpc.protocol.dubbo.telnet.ChangeTelnetHandlerTest.testChangePath,./dubbo-rpc/dubbo-rpc-dubbo,flaky,4000,3996,4,0
 https://github.com/apache/incubator-dubbo,737f7a7ea67832d7f17517326fb2491d0a086dd7,org.apache.dubbo.rpc.protocol.dubbo.telnet.PortTelnetHandlerTest.testListAllPort,./dubbo-rpc/dubbo-rpc-dubbo,flaky,4000,3600,0,400
 https://github.com/apache/incubator-dubbo,737f7a7ea67832d7f17517326fb2491d0a086dd7,org.apache.dubbo.rpc.protocol.dubbo.ExplicitCallbackTest.TestCallbackMultiInstans,./dubbo-rpc/dubbo-rpc-dubbo,flaky,4000,3996,4,0
-https://github.com/apereo/java-cas-client,574b74fa64e4c95bda00ff41d06d358684a0b2e6,org.jasig.cas.client.validation.AssertionImplTests.testAssertionValidity,./cas-client-core,flaky,4000,3966,0,34
 https://github.com/c2mon/c2mon,d80687b119c713dd177a58cf53a997d8cc5ca264,cern.c2mon.daq.filter.dynamic.DiffMovingAverageTest.testAverage,./c2mon-daq/c2mon-daq-core,flaky,4000,3999,0,1
 https://github.com/c2mon/c2mon,d80687b119c713dd177a58cf53a997d8cc5ca264,cern.c2mon.server.common.republisher.RepublisherImplTest.testMultipleExceptions,./c2mon-server/c2mon-server-common,flaky,4000,3984,0,16
 https://github.com/c2mon/c2mon,d80687b119c713dd177a58cf53a997d8cc5ca264,cern.c2mon.server.common.republisher.RepublisherImplTest.testMultiplePublicationsWithExceptions,./c2mon-server/c2mon-server-common,flaky,4000,3953,0,47
@@ -60,12 +56,6 @@ https://github.com/OryxProject/oryx,72ae4bb3cc49d92b77e76d8a30fca8b6549b8865,com
 https://github.com/spinn3r/noxy,d53a49421f385c70b5abe7e8cda84ff3a7b59c71,com.spinn3r.noxy.discovery.zookeeper.ZKTest.testBulkClusterJoining,./noxy-discovery-zookeeper,flaky,4000,2040,1960,0
 https://github.com/spinn3r/noxy,d53a49421f385c70b5abe7e8cda84ff3a7b59c71,com.spinn3r.noxy.discovery.zookeeper.ZKTest.testMembershipJoinAndLeave,./noxy-discovery-zookeeper,flaky,4000,2000,2000,0
 https://github.com/spinn3r/noxy,d53a49421f385c70b5abe7e8cda84ff3a7b59c71,com.spinn3r.noxy.discovery.zookeeper.ZKTest.testDiscoveryListener,./noxy-discovery-zookeeper,flaky,4000,2040,1960,0
-https://github.com/spotify/helios,aebf68dcbdf9d3850478e8bddd2c478fa5fa282a,com.spotify.helios.testing.SimpleTest.simpleTest,./helios-testing,flaky,900,863,0,37
-https://github.com/spotify/helios,aebf68dcbdf9d3850478e8bddd2c478fa5fa282a,com.spotify.helios.testing.TempJobFailureTest.testDeploymentFailure,./helios-testing,flaky,900,899,0,1
-https://github.com/spotify/helios,aebf68dcbdf9d3850478e8bddd2c478fa5fa282a,com.spotify.helios.testing.HeliosSoloDeploymentTest.testUndeployLeftoverJobs,./helios-testing,flaky,900,852,10,38
-https://github.com/spotify/helios,aebf68dcbdf9d3850478e8bddd2c478fa5fa282a,com.spotify.helios.testing.HealthCheckTest.test,./helios-testing,flaky,900,899,0,1
-https://github.com/spotify/helios,aebf68dcbdf9d3850478e8bddd2c478fa5fa282a,com.spotify.helios.testing.JobNamePrefixTest.testJobNamePrefix,./helios-testing,flaky,900,894,1,5
-https://github.com/spotify/helios,aebf68dcbdf9d3850478e8bddd2c478fa5fa282a,com.spotify.helios.testing.ProberTest.testOverrideDefaultProber,./helios-testing,flaky,900,899,0,1
 https://github.com/square/retrofit,ae28c3d5f6fe54f6ca409cdf82106efb47609f8f,retrofit2.adapter.rxjava.SingleThrowingTest.bodyThrowingInOnSuccessDeliveredToPlugin,./retrofit-adapters/rxjava,flaky,4000,3999,0,1
 https://github.com/square/retrofit,ae28c3d5f6fe54f6ca409cdf82106efb47609f8f,retrofit2.adapter.rxjava.CompletableThrowingTest.throwingInOnCompleteDeliveredToPlugin,./retrofit-adapters/rxjava,flaky,4000,3985,2,13
 https://github.com/square/retrofit,ae28c3d5f6fe54f6ca409cdf82106efb47609f8f,retrofit2.adapter.rxjava.CompletableThrowingSafeSubscriberTest.throwingInOnCompleteDeliveredToPlugin,./retrofit-adapters/rxjava,flaky,4000,3984,16,0
@@ -104,10 +94,6 @@ https://github.com/TooTallNate/Java-WebSocket,fa3909c391195178ccf5a92d4ac342a30a
 https://github.com/TooTallNate/Java-WebSocket,fa3909c391195178ccf5a92d4ac342a30ae247c8,org.java_websocket.misc.OpeningHandshakeRejectionTest.testHandshakeRejectionTestCase0,.,flaky,4000,3999,0,1
 https://github.com/TooTallNate/Java-WebSocket,fa3909c391195178ccf5a92d4ac342a30ae247c8,org.java_websocket.misc.OpeningHandshakeRejectionTest.testHandshakeRejectionTestCase11,.,flaky,4000,3996,0,4
 https://github.com/TooTallNate/Java-WebSocket,fa3909c391195178ccf5a92d4ac342a30ae247c8,org.java_websocket.issues.Issue621Test.testIssue,.,flaky,4000,3955,0,45
-https://github.com/undertow-io/undertow,d0efffad5d2034bb07525cac9b299dac72c3045d,io.undertow.websockets.jsr.test.stress.WebsocketStressTestCase.webSocketStringStressTestCase,./websockets-jsr,flaky,2300,2293,0,7
-https://github.com/undertow-io/undertow,d0efffad5d2034bb07525cac9b299dac72c3045d,io.undertow.websockets.jsr.test.JsrWebSocketServer13Test.testTextUsingWriter,./websockets-jsr,flaky,2300,2299,1,0
-https://github.com/undertow-io/undertow,d0efffad5d2034bb07525cac9b299dac72c3045d,io.undertow.websockets.jsr.test.extension.JsrWebsocketExtensionTestCase.testLongTextMessage,./websockets-jsr,flaky,2303,2297,3,3
-https://github.com/undertow-io/undertow,d0efffad5d2034bb07525cac9b299dac72c3045d,io.undertow.websockets.jsr.test.reconnect.ClientEndpointReconnectTestCase.testAnnotatedClientEndpoint,./websockets-jsr,flaky,2300,2290,7,3
 https://github.com/wro4j/wro4j,185ab607f1d649ca38b4a772831ee754cd4649fb,ro.isdc.wro.extensions.processor.TestRubySassCssProcessor.shouldTestFromFolder,./wro4j-extensions,flaky,4000,3997,3,0
 https://github.com/wro4j/wro4j,185ab607f1d649ca38b4a772831ee754cd4649fb,ro.isdc.wro.extensions.processor.support.sass.TestRubySassEngine.shouldProcessValidNonAsciiSass,./wro4j-extensions,flaky,4000,3997,3,0
 https://github.com/wro4j/wro4j,185ab607f1d649ca38b4a772831ee754cd4649fb,ro.isdc.wro.extensions.processor.TestBourbonCssProcessor.shouldBeThreadSafe,./wro4j-extensions,flaky,4000,3972,28,0
