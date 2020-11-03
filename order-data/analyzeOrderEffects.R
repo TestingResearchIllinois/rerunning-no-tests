@@ -57,10 +57,11 @@ allAzureDetailDataOrders <- allAzureDetailDataOrders %>%
 			    ungroup() %>%
 			    mutate(relative_exec_position=absolute_position/max_exec_position)
 
-ordersPlot <- ggplot(allAzureDetailDataOrders %>% filter(test_result!="pass"),
+ordersPlot <- ggplot(allAzureDetailDataOrders %>% filter(test_result!="pass") %>% group_by(test_name) %>% mutate(fail_count=n(),different_positions=n_distinct(absolute_position)) %>% ungroup() %>% filter(fail_count>1 & different_positions>1),
 	             aes(x=relative_position, y=str_trunc(test_name,width=15,side="left"))) +
 	      geom_point() +
-	      facet_wrap(c("slug","module_path"),nrow=5,scales="free_y")
+	      facet_wrap(c("slug","module_path"),nrow=5,scales="free_y") +
+	      labs(x="Relative Position of Failing Tests in Test Suite Execution",y="Test Name")
 
 ggsave(filename="failPosScatterplot.svg",plot=ordersPlot,width=22,height=9)
 
