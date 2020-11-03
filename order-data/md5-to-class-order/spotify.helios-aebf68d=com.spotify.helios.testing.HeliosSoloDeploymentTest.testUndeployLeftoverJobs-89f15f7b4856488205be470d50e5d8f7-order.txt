@@ -1,0 +1,17 @@
+com.spotify.helios.testing.TemporaryJobsBuilderTest
+com.spotify.helios.testing.UdpProberTest
+com.spotify.helios.testing.TemporaryJobBuilderTest
+com.spotify.helios.testing.TempJobFailureTest
+com.spotify.helios.testing.SimpleTest
+com.spotify.helios.testing.ProberTest
+com.spotify.helios.testing.LoggingLogStreamFollowerTest
+com.spotify.helios.testing.JobsTest
+com.spotify.helios.testing.JobWithConfigTest
+com.spotify.helios.testing.JobNamePrefixTest
+com.spotify.helios.testing.InMemoryLogStreamFollowerTest
+com.spotify.helios.testing.HostPickingStrategiesTest
+com.spotify.helios.testing.HeliosSoloDeploymentTest
+com.spotify.helios.testing.HealthCheckTest
+com.spotify.helios.testing.DefaultDeployerTest
+com.spotify.helios.testing.ConfigTest
+com.spotify.helios.testing.BadTest

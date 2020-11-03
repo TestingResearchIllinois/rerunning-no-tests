@@ -1,0 +1,4 @@
+me.escoffier.vertx.completablefuture.VertxCompletableFutureTest
+me.escoffier.vertx.completablefuture.CompletableFutureOperatorTest
+me.escoffier.vertx.completablefuture.SupplyAndRunAsyncTest
+me.escoffier.vertx.completablefuture.examples.HttpClientTest

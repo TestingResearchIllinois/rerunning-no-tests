@@ -1,0 +1,3 @@
+net.redpipe.engine.ServerExtendableTest
+net.redpipe.engine.ApiTest
+net.redpipe.engine.swagger.SwaggerApiTest

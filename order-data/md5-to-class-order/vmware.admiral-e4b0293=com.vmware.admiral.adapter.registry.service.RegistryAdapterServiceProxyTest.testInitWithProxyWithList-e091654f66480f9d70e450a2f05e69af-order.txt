@@ -1,0 +1,2 @@
+com.vmware.admiral.adapter.registry.service.RegistryAdapterServiceProxyTest
+com.vmware.admiral.adapter.registry.service.RegistryAdapterServiceTest

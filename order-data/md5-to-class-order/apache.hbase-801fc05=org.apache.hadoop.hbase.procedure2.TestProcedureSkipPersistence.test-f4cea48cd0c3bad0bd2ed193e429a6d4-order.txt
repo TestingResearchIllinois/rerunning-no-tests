@@ -1,0 +1,16 @@
+org.apache.hadoop.hbase.procedure2.util.TestDelayedUtil
+org.apache.hadoop.hbase.procedure2.store.wal.TestWALProcedureStore
+org.apache.hadoop.hbase.procedure2.TestYieldProcedures
+org.apache.hadoop.hbase.procedure2.TestStateMachineProcedure
+org.apache.hadoop.hbase.procedure2.TestProcedureUtil
+org.apache.hadoop.hbase.procedure2.TestProcedureToString
+org.apache.hadoop.hbase.procedure2.TestProcedureSuspended
+org.apache.hadoop.hbase.procedure2.TestProcedureRecovery
+org.apache.hadoop.hbase.procedure2.TestProcedureNonce
+org.apache.hadoop.hbase.procedure2.TestProcedureMetrics
+org.apache.hadoop.hbase.procedure2.TestProcedureInMemoryChore
+org.apache.hadoop.hbase.procedure2.TestProcedureExecutor
+org.apache.hadoop.hbase.procedure2.TestProcedureExecution
+org.apache.hadoop.hbase.procedure2.TestProcedureEvents
+org.apache.hadoop.hbase.procedure2.TestProcedureBypass
+org.apache.hadoop.hbase.procedure2.TestChildProcedures
