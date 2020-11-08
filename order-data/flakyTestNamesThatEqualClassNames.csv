@@ -1,0 +1,7 @@
+test_class
+cern.c2mon.daq.filter.dynamic.CounterTimeDeadbandActivatorTest
+com.github.davidmoten.rx2.SpecializedMspcLinkedQueueTest
+com.github.kagkarlsson.scheduler.compatibility.OracleCompatibilityTest
+com.github.kagkarlsson.scheduler.compatibility.MssqlCompatibilityTest
+com.github.kagkarlsson.scheduler.compatibility.MysqlCompatibilityTest
+ro.isdc.wro.extensions.processor.TestRhinoTypeScriptProcessor
